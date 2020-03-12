@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Max.WMS.NetCore",
+    "\\Max.WMS.NetCore\\Entity",
+    "\\Max.WMS.NetCore\\Max.Core.IRepository",
+    "\\Max.WMS.NetCore\\Max.Core.IServices",
+    "\\Max.WMS.NetCore\\Max.Core.Repository",
+    "\\Max.WMS.NetCore\\Max.Core.Services",
+    "\\Max.WMS.NetCore\\Max.Core.Utils",
+    "\\Max.WMS.NetCore\\Max.NetCore.Extensions",
+    "\\Max.WMS.NetCore\\Orm"
+  ],
+  "SelectedNode": "\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
+  "PreviewInSolutionExplorer": false
+}

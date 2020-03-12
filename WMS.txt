@@ -1,1 +1,12 @@
 https://github.com/MaxweiWang/Max.WMS_Demo.git
+git init  表示初始化
+
+git remote add origin 远程分支链接     表示自己要与origin master建立连接
+
+git add . 
+
+git commit -m ""
+
+git pull --rebase origin master
+
+git push -u origin master

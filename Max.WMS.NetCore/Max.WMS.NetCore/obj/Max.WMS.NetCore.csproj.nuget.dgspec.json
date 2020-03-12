@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\max\\core\\Max.WMS.NetCore\\Max.WMS.NetCore\\Max.WMS.NetCore.csproj": {}
+    "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.WMS.NetCore\\Max.WMS.NetCore.csproj": {}
   },
   "projects": {
-    "D:\\max\\core\\Max.WMS.NetCore\\Max.WMS.NetCore\\Max.WMS.NetCore.csproj": {
+    "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.WMS.NetCore\\Max.WMS.NetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\max\\core\\Max.WMS.NetCore\\Max.WMS.NetCore\\Max.WMS.NetCore.csproj",
+        "projectUniqueName": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.WMS.NetCore\\Max.WMS.NetCore.csproj",
         "projectName": "Max.WMS.NetCore",
-        "projectPath": "D:\\max\\core\\Max.WMS.NetCore\\Max.WMS.NetCore\\Max.WMS.NetCore.csproj",
+        "projectPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.WMS.NetCore\\Max.WMS.NetCore.csproj",
         "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
-        "outputPath": "D:\\max\\core\\Max.WMS.NetCore\\Max.WMS.NetCore\\obj\\",
+        "outputPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.WMS.NetCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
