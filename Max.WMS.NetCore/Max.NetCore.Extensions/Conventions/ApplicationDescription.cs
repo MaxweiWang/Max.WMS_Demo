@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace YL.NetCore.Conventions
+namespace Max.NetCore.Extensions.Conventions
 {
     public class ApplicationDescription : IApplicationModelConvention
     {

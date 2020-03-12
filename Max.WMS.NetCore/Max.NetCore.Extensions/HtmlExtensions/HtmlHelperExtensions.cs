@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 
-namespace YL.NetCore.HtmlExtensions
+namespace Max.NetCore.Extensions.HtmlExtensions
 {
     public static class HtmlHelperExtensions
     {

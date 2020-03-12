@@ -6,10 +6,10 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
-using YL.Utils.Check;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Check;
+using Max.Core.Utils.Extensions;
 
-namespace YL.Utils.Json
+namespace Max.Core.Utils.Json
 {
     public class JsonDict
     {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
-using YL.Utils.Security;
+using Max.Core.Utils.Security;
 using System;
 
-namespace YL.NetCore.Attributes
+namespace Max.NetCore.Extensions.Attributes
 {
     /// <summary>
     /// https://www.cnblogs.com/sagecheng/p/9462239.html

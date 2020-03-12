@@ -1,0 +1,3 @@
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Orm\obj\Debug\netstandard2.0\Max.Core.Orm.csprojAssemblyReference.cache
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Orm\obj\Debug\netstandard2.0\Max.Core.Orm.AssemblyInfoInputs.cache
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Orm\obj\Debug\netstandard2.0\Max.Core.Orm.AssemblyInfo.cs

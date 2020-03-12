@@ -5,13 +5,13 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Linq;
 using System.Security.Claims;
-using YL.Core.Entity.Fluent.Validation;
-using YL.Utils.Env;
-using YL.Utils.Extensions;
-using YL.Utils.Http;
-using YL.Utils.Pub;
+using Max.Core.Entity.Fluent.Validation;
+using Max.Core.Utils.Env;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Http;
+using Max.Core.Utils.Pub;
 
-namespace YL.NetCore.Attributes
+namespace Max.WMS.NetCore.Attributes
 {
     public sealed class OperationLogAttribute : ResultFilterAttribute
     {

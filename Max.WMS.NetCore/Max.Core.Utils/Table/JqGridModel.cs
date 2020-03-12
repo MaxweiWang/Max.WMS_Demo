@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace YL.Utils.Table
+namespace Max.Core.Utils.Table
 {
     public class JqGridModel
     {

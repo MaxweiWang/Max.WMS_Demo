@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Options;
 using System;
 
-namespace YL.NetCore.DI
+namespace Max.NetCore.Extensions.DI
 {
     /// <summary>
     /// 使用DI

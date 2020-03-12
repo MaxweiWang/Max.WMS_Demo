@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace YL.NetCore.Middlewares
+namespace Max.NetCore.Extensions.Middlewares
 {
     /// <summary>
     /// app.UseMiddleware<AdminSafeListMiddleware>(

@@ -145,10 +145,10 @@
                         <table class="table table-bordered text-nowrap table-hover">
                             <tr>
                                 <td>当前服务器OS</td>
-                                <td>@YL.Utils.Pub.PubSys.IsSystem()</td>
+                                <td>@Max.Core.Utils.Pub.PubSys.IsSystem()</td>
                             </tr>
                             @{
-                                var arr = _config.GetSection("Des").Get<YL.Core.Dto.ProjectDes>();
+                                var arr = _config.GetSection("Des").Get<Max.Core.Dto.ProjectDes>();
 
                                 if (arr != null && arr.Content.Length > 0)
                                 {

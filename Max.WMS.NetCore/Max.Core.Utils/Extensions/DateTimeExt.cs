@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace YL.Utils.Extensions
+namespace Max.Core.Utils.Extensions
 {
     public static class DateTimeExt
     {

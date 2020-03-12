@@ -5,7 +5,7 @@ using System.Text;
 using System.Linq;
 using System.Dynamic;
 
-namespace YL.Utils.Extensions
+namespace Max.Core.Utils.Extensions
 {
     public static class ExpandoObjectExt
     {

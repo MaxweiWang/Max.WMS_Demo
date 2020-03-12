@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace YL.Utils.Pub
+namespace Max.Core.Utils.Pub
 {
     public enum PubEnum
     {

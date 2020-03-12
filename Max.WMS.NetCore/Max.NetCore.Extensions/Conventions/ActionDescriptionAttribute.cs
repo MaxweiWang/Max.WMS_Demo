@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using System;
 
-namespace YL.NetCore.Conventions
+namespace Max.NetCore.Extensions.Conventions
 {
     public class ActionDescriptionAttribute : Attribute, IActionModelConvention
     {

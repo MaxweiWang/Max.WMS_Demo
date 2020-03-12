@@ -1,4 +1,4 @@
-﻿namespace YL.NetCore
+﻿namespace Max.NetCore.Extensions
 {
     /// <summary>
     /// 依赖注入 继承该接口自动注册

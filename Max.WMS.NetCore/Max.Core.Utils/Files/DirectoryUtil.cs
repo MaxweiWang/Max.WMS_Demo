@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
-using YL.Utils.Check;
+using Max.Core.Utils.Check;
 
-namespace YL.Utils.Files
+namespace Max.Core.Utils.Files
 {
     public static class DirectoryUtil
     {

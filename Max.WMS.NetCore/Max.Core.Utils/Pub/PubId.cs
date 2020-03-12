@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace YL.Utils.Pub
+namespace Max.Core.Utils.Pub
 {
     public class PubId
     {

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace YL.NetCore.Conventions
+namespace Max.NetCore.Extensions.Conventions
 {
     /// <summary>
     /// 修改Action的名称 该属性也会覆盖 MVC 使用该方法名称的约定

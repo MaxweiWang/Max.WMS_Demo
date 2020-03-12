@@ -2,10 +2,10 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using YL.Utils.Extensions;
-using YL.Utils.Pub;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Pub;
 
-namespace KopSoftWms.ViewComponents
+namespace Max.WMS.NetCore.ViewComponents
 {
     public class DictTypeViewComponent : ViewComponent
     {

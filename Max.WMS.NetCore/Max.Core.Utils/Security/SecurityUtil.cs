@@ -1,9 +1,9 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
-using YL.Utils.Check;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Check;
+using Max.Core.Utils.Extensions;
 
-namespace YL.Utils.Security
+namespace Max.Core.Utils.Security
 {
     public static class SecurityUtil
     {

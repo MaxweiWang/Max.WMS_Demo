@@ -1,0 +1,8 @@
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.WMS.NetCore\obj\Debug\netcoreapp3.1\Max.WMS.NetCore.csprojAssemblyReference.cache
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.WMS.NetCore\obj\Debug\netcoreapp3.1\staticwebassets\Max.WMS.NetCore.StaticWebAssets.Manifest.cache
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.WMS.NetCore\obj\Debug\netcoreapp3.1\staticwebassets\Max.WMS.NetCore.StaticWebAssets.xml
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.WMS.NetCore\obj\Debug\netcoreapp3.1\Max.WMS.NetCore.MvcApplicationPartsAssemblyInfo.cache
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.WMS.NetCore\obj\Debug\netcoreapp3.1\Max.WMS.NetCore.RazorAssemblyInfo.cache
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.WMS.NetCore\obj\Debug\netcoreapp3.1\Max.WMS.NetCore.RazorAssemblyInfo.cs
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.WMS.NetCore\obj\Debug\netcoreapp3.1\Max.WMS.NetCore.AssemblyInfoInputs.cache
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.WMS.NetCore\obj\Debug\netcoreapp3.1\Max.WMS.NetCore.AssemblyInfo.cs

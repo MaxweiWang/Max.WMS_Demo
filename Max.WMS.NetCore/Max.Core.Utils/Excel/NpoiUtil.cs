@@ -8,10 +8,10 @@ using NPOI.HPSF;
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
-using YL.Utils.Extensions;
-using YL.Utils.Pub;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Pub;
 
-namespace YL.Utils.Excel
+namespace Max.Core.Utils.Excel
 {
     /// <summary>
     /// NPOI linux 报错

@@ -1,10 +1,10 @@
 ﻿using Pomelo.AspNetCore.TimedJob;
-using YL.NetCore.DI;
-using YL.Utils.Log;
+using Max.NetCore.Extensions.DI;
+using Max.Core.Utils.Log;
 using SqlSugar;
 using System;
 
-namespace KopSoftWms
+namespace Max.WMS.NetCore
 {
     public class SqlJob : Job
     {

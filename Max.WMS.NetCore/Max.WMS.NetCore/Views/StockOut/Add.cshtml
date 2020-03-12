@@ -20,7 +20,7 @@
                     <input class="form-control" v-model="OrderNo" v-focus type="text">
                 </div>
             </div>
-            @await Component.InvokeAsync("Dict", YL.Utils.Pub.PubDictType.stockout.ToString())
+            @await Component.InvokeAsync("Dict", Max.Core.Utils.Pub.PubDictType.stockout.ToString())
             <div class="form-group">
                 <label class="form-label col-sm-2">客户 </label>
                 <div class="col-sm-10">

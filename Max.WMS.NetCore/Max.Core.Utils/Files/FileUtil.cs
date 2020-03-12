@@ -1,11 +1,11 @@
 ﻿using System;
 using System.IO;
 using System.Text;
-using YL.Utils.Check;
-using YL.Utils.Extensions;
-using YL.Utils.Delegate;
+using Max.Core.Utils.Check;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Delegate;
 
-namespace YL.Utils.Files
+namespace Max.Core.Utils.Files
 {
     public static class FileUtil
     {

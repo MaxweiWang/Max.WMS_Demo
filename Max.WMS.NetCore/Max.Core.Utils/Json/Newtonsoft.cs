@@ -3,9 +3,9 @@ using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.Data;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Extensions;
 
-namespace YL.Utils.Json
+namespace Max.Core.Utils.Json
 {
     /// <summary>
     ///https://github.com/JamesNK/Newtonsoft.Json

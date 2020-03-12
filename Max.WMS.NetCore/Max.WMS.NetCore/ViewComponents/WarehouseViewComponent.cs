@@ -1,9 +1,9 @@
 ﻿using IServices;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Extensions;
 
-namespace KopSoftWms.ViewComponents
+namespace Max.WMS.NetCore.ViewComponents
 {
     public class WarehouseViewComponent : ViewComponent
     {

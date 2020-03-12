@@ -2,7 +2,7 @@
 using System.IO;
 using System.IO.Compression;
 
-namespace YL.NetCoreApp
+namespace Max.NetCore.Extensions
 {
     public class BrotliCompressionProvider : ICompressionProvider
     {

@@ -19,8 +19,8 @@
                 </div>*@
             <yl-input lable="物料名称" v-model="MaterialName"></yl-input>
 
-            @await Component.InvokeAsync("Dict", YL.Utils.Pub.PubDictType.material.ToString())
-            @await Component.InvokeAsync("Dict", YL.Utils.Pub.PubDictType.unit.ToString())
+            @await Component.InvokeAsync("Dict", Max.Core.Utils.Pub.PubDictType.material.ToString())
+            @await Component.InvokeAsync("Dict", Max.Core.Utils.Pub.PubDictType.unit.ToString())
             @await Component.InvokeAsync("Warehouse")
             <div class="form-group">
                 <label class="form-label col-sm-2">所属库区</label>

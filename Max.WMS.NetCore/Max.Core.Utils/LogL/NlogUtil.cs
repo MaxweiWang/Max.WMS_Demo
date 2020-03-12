@@ -1,7 +1,7 @@
 ﻿using NLog;
 using System;
 
-namespace YL.Utils.Log
+namespace Max.Core.Utils.Log
 {
     public class NlogUtil : ILogUtil
     {

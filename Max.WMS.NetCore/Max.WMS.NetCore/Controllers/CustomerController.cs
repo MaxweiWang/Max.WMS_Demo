@@ -4,19 +4,19 @@ using Microsoft.AspNetCore.Mvc;
 using SqlSugar;
 using System.IO;
 using System.Linq;
-using YL.Core.Entity;
-using YL.Core.Entity.Fluent.Validation;
-using YL.NetCore.Attributes;
-using YL.NetCore.NetCoreApp;
-using YL.Utils.Delegate;
-using YL.Utils.Excel;
-using YL.Utils.Extensions;
-using YL.Utils.Files;
-using YL.Utils.Json;
-using YL.Utils.Pub;
-using YL.Utils.Table;
+using Max.Core.Entity;
+using Max.Core.Entity.Fluent.Validation;
+using Max.NetCore.Extensions.Attributes;
+using Max.NetCore.Extensions.NetCoreApp;
+using Max.Core.Utils.Delegate;
+using Max.Core.Utils.Excel;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Files;
+using Max.Core.Utils.Json;
+using Max.Core.Utils.Pub;
+using Max.Core.Utils.Table;
 
-namespace KopSoftWms.Controllers
+namespace Max.WMS.NetCore.Controllers
 {
     public class CustomerController : BaseController
     {

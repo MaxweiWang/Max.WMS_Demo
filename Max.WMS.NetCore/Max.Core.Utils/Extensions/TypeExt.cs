@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Globalization;
-using YL.Utils.Check;
+using Max.Core.Utils.Check;
 
-namespace YL.Utils.Extensions
+namespace Max.Core.Utils.Extensions
 {
     /// <summary>
     /// 类型转换

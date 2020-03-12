@@ -1,4 +1,4 @@
-﻿namespace YL.Utils.Json
+﻿namespace Max.Core.Utils.Json
 {
     /// <summary>
     /// 目前使用Jil

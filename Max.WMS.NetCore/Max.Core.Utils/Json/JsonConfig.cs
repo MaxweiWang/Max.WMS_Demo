@@ -1,7 +1,7 @@
 ﻿using Jil;
 using Swifter.Json;
 
-namespace YL.Utils.Json
+namespace Max.Core.Utils.Json
 {
     /// <summary>
     ///  Json配置根据自己项目的情况自己扩展

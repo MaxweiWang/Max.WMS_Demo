@@ -8,10 +8,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using YL.Utils.Extensions;
-using YL.Utils.Pub;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Pub;
 
-namespace YL.Utils.Env
+namespace Max.Core.Utils.Env
 {
     /// <summary>
     /// 使用方法app.UseGlobalCore();

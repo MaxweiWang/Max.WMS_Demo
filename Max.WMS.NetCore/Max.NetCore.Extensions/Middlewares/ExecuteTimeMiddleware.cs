@@ -4,9 +4,9 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
-using YL.Utils.Log;
+using Max.Core.Utils.Log;
 
-namespace YL.NetCore.Middlewares
+namespace Max.NetCore.Extensions.Middlewares
 {
     public class ExecuteTimeMiddleware
     {

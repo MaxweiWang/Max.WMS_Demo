@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using YL.Core.Dto;
-using YL.Utils.Extensions;
+using Max.Core.Dto;
+using Max.Core.Utils.Extensions;
 
-namespace KopSoftWms.ViewComponents
+namespace Max.WMS.NetCore.ViewComponents
 {
     public class MenuViewComponent : ViewComponent
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace YL.NetCore.Autofac
+namespace Max.NetCore.Extensions.Autofac
 {
     public class AutofacResolver : IResolver
     {

@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace YL.Utils.Extensions
+namespace Max.Core.Utils.Extensions
 {
     public static class FormFileExt
     {

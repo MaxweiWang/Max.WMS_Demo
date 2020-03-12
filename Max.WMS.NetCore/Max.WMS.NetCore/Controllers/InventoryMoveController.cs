@@ -1,19 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using YL.NetCore.Attributes;
-using YL.NetCore.NetCoreApp;
+using Max.NetCore.Extensions.Attributes;
+using Max.NetCore.Extensions.NetCoreApp;
 using IServices;
-using YL.Utils.Table;
-using YL.Utils.Pub;
-using YL.Utils.Extensions;
-using YL.Core.Dto;
-using YL.Core.Entity;
-using YL.Core.Entity.Fluent.Validation;
+using Max.Core.Utils.Table;
+using Max.Core.Utils.Pub;
+using Max.Core.Utils.Extensions;
+using Max.Core.Dto;
+using Max.Core.Entity;
+using Max.Core.Entity.Fluent.Validation;
 using System.Linq;
 using SqlSugar;
 using System.Collections.Generic;
-using YL.Utils.Security;
+using Max.Core.Utils.Security;
 
-namespace KopSoftWms.Controllers
+namespace Max.WMS.NetCore.Controllers
 {
     public class InventoryMoveController : BaseController
     {

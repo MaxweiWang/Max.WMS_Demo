@@ -6,9 +6,9 @@ using System.Dynamic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using YL.Utils.Reflection;
+using Max.Core.Utils.Reflection;
 
-namespace YL.Utils.Extensions
+namespace Max.Core.Utils.Extensions
 {
     public static class CollectionExt
     {

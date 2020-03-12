@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace YL.Utils.Pub
+namespace Max.Core.Utils.Pub
 {
     public class PubSys
     {

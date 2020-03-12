@@ -1,6 +1,6 @@
 ﻿using Ganss.XSS;
 
-namespace YL.Utils.Security
+namespace Max.Core.Utils.Security
 {
     public class Xss
     {

@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Options;
 using System;
 
-namespace YL.NetCore.Autofac
+namespace Max.NetCore.Extensions.Autofac
 {
     public class ContainerManager
     {

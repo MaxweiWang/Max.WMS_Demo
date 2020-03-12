@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
 
-namespace YL.NetCore.Attributes
+namespace Max.NetCore.Extensions.Attributes
 {
     /// <summary>
     /// net core 2.1

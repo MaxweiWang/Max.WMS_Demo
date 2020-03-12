@@ -1,7 +1,7 @@
 ﻿using System;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Extensions;
 
-namespace YL.Utils.Check
+namespace Max.Core.Utils.Check
 {
     public static class CheckNull
     {

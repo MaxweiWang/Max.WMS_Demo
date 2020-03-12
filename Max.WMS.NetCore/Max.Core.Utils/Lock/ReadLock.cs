@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace YL.Utils.Lock
+namespace Max.Core.Utils.Lock
 {
     public class ReadLock : IDisposable
     {

@@ -12,18 +12,18 @@ using System.IO.Compression;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
-using YL.Utils.Check;
-using YL.Utils.Extensions;
-using YL.Utils.Log;
-using YL.Utils.Security;
-using YL.Utils.Json;
+using Max.Core.Utils.Check;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Log;
+using Max.Core.Utils.Security;
+using Max.Core.Utils.Json;
 using System;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using YL.NetCore.DI;
+using Max.NetCore.Extensions.DI;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace YL.NetCoreApp.Extensions
+namespace Max.NetCore.Extensions
 {
     /// <summary>
     /// ServiceCollection

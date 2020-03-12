@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace YL.Utils.Extensions
+namespace Max.Core.Utils.Extensions
 {
     public static class IEnumerableExt
     {

@@ -5,17 +5,17 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Http.Extensions;
 using System.Linq;
 using System.Security.Claims;
-using YL.Core.Dto;
-using YL.Utils.Extensions;
-using YL.Utils.Json;
-using YL.Utils.Table;
-using YL.Utils.Pub;
+using Max.Core.Dto;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Json;
+using Max.Core.Utils.Table;
+using Max.Core.Utils.Pub;
 using Microsoft.AspNetCore.Hosting;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Collections;
 
-namespace YL.NetCore.NetCoreApp
+namespace Max.NetCore.Extensions
 {
     /// <summary>
     ///[FromBody] 请求正文 只能有一个参数 json 针对复杂类型参数进行推断

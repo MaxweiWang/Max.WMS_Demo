@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace YL.Utils.Delegate
+namespace Max.Core.Utils.Delegate
 {
     public class SingletonUtil<T> where T : class, new()
     {

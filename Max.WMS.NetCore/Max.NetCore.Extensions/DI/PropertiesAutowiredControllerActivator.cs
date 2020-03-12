@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Internal;
-using YL.NetCore.Attributes;
+using Max.NetCore.Extensions.Attributes;
 
-namespace YL.NetCore.DI
+namespace Max.NetCore.Extensions.DI
 {
     /// <summary>
     /// 用于实现属性注入的ControllerActivator

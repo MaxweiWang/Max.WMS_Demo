@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection.Emit;
 
-namespace YL.Utils.Reflection
+namespace Max.Core.Utils.Reflection
 {
     public class EmitUtil
     {

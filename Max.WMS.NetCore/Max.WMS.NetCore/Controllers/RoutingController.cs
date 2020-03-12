@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace KopSoftWms.Controllers
+namespace Max.WMS.NetCore.Controllers
 {
     public class RoutingController : Controller
     {

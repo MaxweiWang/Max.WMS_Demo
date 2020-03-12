@@ -4,17 +4,17 @@ using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Diagnostics;
 using System.Text;
-using YL.Core.Dto;
-using YL.Core.Entity;
+using Max.Core.Dto;
+using Max.Core.Entity;
 using YL.Models;
-using YL.NetCore.Attributes;
-using YL.NetCore.NetCoreApp;
-using YL.Utils.Pub;
-using YL.Utils.Extensions;
+using Max.NetCore.Extensions.Attributes;
+using Max.NetCore.Extensions.NetCoreApp;
+using Max.Core.Utils.Pub;
+using Max.Core.Utils.Extensions;
 using MediatR;
 using SqlSugar;
 
-namespace KopSoftWms.Controllers
+namespace Max.WMS.NetCore.Controllers
 {
     public class HomeController : BaseController
     {
@@ -65,9 +65,9 @@ namespace KopSoftWms.Controllers
             return View();
         }
 
-        [AddHeader("Content-Type", YL.Utils.Files.ContentType.ContentTypeSSE)]
-        [AddHeader("Cache-Control", YL.Utils.Files.ContentType.CacheControl)]
-        [AddHeader("Connection", YL.Utils.Files.ContentType.Connection)]
+        [AddHeader("Content-Type", Max.Core.Utils.Files.ContentType.ContentTypeSSE)]
+        [AddHeader("Cache-Control", Max.Core.Utils.Files.ContentType.CacheControl)]
+        [AddHeader("Connection", Max.Core.Utils.Files.ContentType.Connection)]
         public IActionResult ServerSendMsg()
         {
             var a = new ServerSentEventsDto

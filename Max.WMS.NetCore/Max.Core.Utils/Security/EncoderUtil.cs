@@ -3,7 +3,7 @@ using System.Net;
 using System.Web;
 using System.Text;
 
-namespace YL.Utils.Security
+namespace Max.Core.Utils.Security
 {
     public class EncoderUtil
     {

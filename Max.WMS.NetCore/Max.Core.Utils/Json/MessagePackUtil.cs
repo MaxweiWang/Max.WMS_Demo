@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using MessagePack;
 
-namespace YL.Utils.Json
+namespace Max.Core.Utils.Json
 {
     /// <summary>
     /// https://github.com/neuecc/MessagePack-CSharp

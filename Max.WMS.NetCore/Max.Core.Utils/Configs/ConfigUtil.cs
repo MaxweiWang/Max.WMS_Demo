@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 using System;
 using System.IO;
 
-namespace YL.Utils.Configs
+namespace Max.Core.Utils.Configs
 {
     public class ConfigUtil
     {

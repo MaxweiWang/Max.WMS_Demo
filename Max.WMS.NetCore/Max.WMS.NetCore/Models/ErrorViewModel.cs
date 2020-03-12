@@ -1,4 +1,4 @@
-namespace YL.Models
+namespace Max.WMS.NetCore.Models
 {
     public class ErrorViewModel
     {

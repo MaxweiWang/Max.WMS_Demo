@@ -11,16 +11,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using YL.Core.Dto;
-using YL.Core.Entity;
-using YL.NetCore.NetCoreApp;
-using YL.Utils.Extensions;
-using YL.Utils.Pub;
-using YL.Utils.Security;
-using YL.Utils.Json;
+using Max.Core.Dto;
+using Max.Core.Entity;
+using Max.NetCore.Extensions.NetCoreApp;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Pub;
+using Max.Core.Utils.Security;
+using Max.Core.Utils.Json;
 using MediatR;
 
-namespace KopSoftWms.Controllers
+namespace Max.WMS.NetCore.Controllers
 {
     public class LoginController : BaseController
     {

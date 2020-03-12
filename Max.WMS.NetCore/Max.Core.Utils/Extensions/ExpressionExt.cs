@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using System.Linq.Dynamic.Core;
 
-namespace YL.Utils.Extensions
+namespace Max.Core.Utils.Extensions
 {
     public static class ExpressionExt
     {

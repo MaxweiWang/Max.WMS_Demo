@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using SqlSugar;
 using System.Linq;
-using YL.NetCore.Attributes;
-using YL.NetCore.NetCoreApp;
-using YL.Utils.Pub;
-using YL.Utils.Table;
+using Max.NetCore.Extensions.Attributes;
+using Max.NetCore.Extensions.NetCoreApp;
+using Max.Core.Utils.Pub;
+using Max.Core.Utils.Table;
 
-namespace KopSoftWms.Controllers
+namespace Max.WMS.NetCore.Controllers
 {
     public class LogController : BaseController
     {

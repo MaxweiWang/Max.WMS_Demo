@@ -3,9 +3,9 @@ using Swifter.RW;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Extensions;
 
-namespace YL.Utils.Json
+namespace Max.Core.Utils.Json
 {
     public static class SwifterJson
     {

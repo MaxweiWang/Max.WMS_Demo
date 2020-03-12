@@ -10,7 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 
-namespace YL.Utils.Extensions
+namespace Max.Core.Utils.Extensions
 
 {
     /// <summary>

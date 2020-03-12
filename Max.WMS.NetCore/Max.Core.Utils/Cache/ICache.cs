@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace YL.Utils.Cache
+namespace Max.Core.Utils.Cache
 {
     public interface ICache
     {

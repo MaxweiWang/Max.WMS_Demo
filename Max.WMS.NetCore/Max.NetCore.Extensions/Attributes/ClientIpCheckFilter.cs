@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 
-namespace YL.NetCore.Attributes
+namespace Max.NetCore.Extensions.Attributes
 {
     /// <summary>
     /// 恶意IP

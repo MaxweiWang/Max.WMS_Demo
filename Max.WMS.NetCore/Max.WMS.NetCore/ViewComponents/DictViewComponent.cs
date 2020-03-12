@@ -4,10 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using YL.Utils.Extensions;
-using YL.Utils.Pub;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Pub;
 
-namespace KopSoftWms.ViewComponents
+namespace Max.WMS.NetCore.ViewComponents
 {
     public class DictViewComponent : ViewComponent
     {

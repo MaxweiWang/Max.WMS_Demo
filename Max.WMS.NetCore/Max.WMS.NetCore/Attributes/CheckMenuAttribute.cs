@@ -6,10 +6,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Security.Claims;
-using YL.Utils.Extensions;
-using YL.Utils.Pub;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Pub;
 
-namespace YL.NetCore.Attributes
+namespace Max.WMS.NetCore.Attributes
 {
     public class CheckMenuAttribute : ActionFilterAttribute
     {

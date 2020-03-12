@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace YL.Utils.Lock
+namespace Max.Core.Utils.Lock
 {
     public class WriterLock : IDisposable
     {

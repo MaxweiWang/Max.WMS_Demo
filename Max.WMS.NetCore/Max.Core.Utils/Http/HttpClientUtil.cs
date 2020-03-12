@@ -3,11 +3,11 @@ using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Text;
-using YL.Utils.Check;
-using YL.Utils.Security;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Check;
+using Max.Core.Utils.Security;
+using Max.Core.Utils.Extensions;
 
-namespace YL.Utils.Http
+namespace Max.Core.Utils.Http
 {
     public class HttpClientUtil
     {

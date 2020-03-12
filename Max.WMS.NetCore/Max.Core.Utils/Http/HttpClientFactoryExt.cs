@@ -2,9 +2,9 @@
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Extensions;
 
-namespace YL.Utils.Http
+namespace Max.Core.Utils.Http
 {
     public static class HttpClientFactoryExt
     {

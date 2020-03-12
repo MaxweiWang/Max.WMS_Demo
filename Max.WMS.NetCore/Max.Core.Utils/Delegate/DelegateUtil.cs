@@ -3,11 +3,11 @@ using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Transactions;
-using YL.Utils.Check;
-using YL.Utils.Pub;
-using YL.Utils.Log;
+using Max.Core.Utils.Check;
+using Max.Core.Utils.Pub;
+using Max.Core.Utils.Log;
 
-namespace YL.Utils.Delegate
+namespace Max.Core.Utils.Delegate
 {
     public class DelegateUtil
     {

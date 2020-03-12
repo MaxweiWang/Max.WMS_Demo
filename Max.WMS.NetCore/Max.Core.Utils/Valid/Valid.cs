@@ -2,9 +2,9 @@
 using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Extensions;
 
-namespace YL.Utils.Valid
+namespace Max.Core.Utils.Valid
 {
     /// <summary>
     /// 验证 操作

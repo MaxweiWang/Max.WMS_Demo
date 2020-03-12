@@ -4,10 +4,10 @@ using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using YL.Utils.Extensions;
-using YL.Utils.Check;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Check;
 
-namespace YL.Utils.Cache
+namespace Max.Core.Utils.Cache
 {
     public static class DistributedCacheExt
     {

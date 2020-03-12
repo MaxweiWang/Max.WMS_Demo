@@ -9,12 +9,12 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
-using YL.NetCore.Middlewares;
-using YL.Utils.Env;
-using YL.Utils.Extensions;
-using YL.Utils.Http;
+using Max.NetCore.Extensions.Middlewares;
+using Max.Core.Utils.Env;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Http;
 
-namespace YL.NetCoreApp.Extensions
+namespace Max.NetCore.Extensions
 {
     public static class ApplicationBuilderExt
     {

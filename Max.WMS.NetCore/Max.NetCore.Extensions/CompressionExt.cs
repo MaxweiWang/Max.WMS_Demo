@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.IO.Compression;
 
-namespace YL.NetCoreApp.Extensions
+namespace Max.NetCore.Extensions
 {
     public class CompressionExt
     {

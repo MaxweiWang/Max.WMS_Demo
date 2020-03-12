@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace YL.NetCore.Attributes
+namespace Max.NetCore.Extensions.Attributes
 {
     /// <summary>
     /// https://www.strathweb.com/2018/10/convert-null-valued-results-to-404-in-asp-net-core-mvc/

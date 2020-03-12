@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using System.Linq;
 using System.Reflection;
-using YL.NetCore.Attributes;
+using Max.NetCore.Extensions.Attributes;
 
-namespace YL.NetCore.Conventions
+namespace Max.NetCore.Extensions.Conventions
 {
     /// <summary>
     /// 注册约定

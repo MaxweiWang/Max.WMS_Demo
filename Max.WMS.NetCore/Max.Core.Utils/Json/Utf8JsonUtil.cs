@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Utf8Json;
 
-namespace YL.Utils.Json
+namespace Max.Core.Utils.Json
 {
     public static class Utf8JsonUtil
     {

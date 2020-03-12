@@ -4,10 +4,10 @@ using System;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.Loader;
-using YL.Utils.Extensions;
-using YL.Utils.Check;
+using Max.Core.Utils.Extensions;
+using Max.Core.Utils.Check;
 
-namespace YL.NetCore.DI
+namespace Max.NetCore.Extensions.DI
 {
     /// <summary>
     /// net core mvc 容器DI

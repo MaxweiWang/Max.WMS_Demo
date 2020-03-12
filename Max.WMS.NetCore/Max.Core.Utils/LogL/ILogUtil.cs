@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace YL.Utils.Log
+namespace Max.Core.Utils.Log
 {
     public interface ILogUtil
     {

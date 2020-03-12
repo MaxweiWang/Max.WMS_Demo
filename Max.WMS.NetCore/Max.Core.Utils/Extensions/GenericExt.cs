@@ -1,4 +1,4 @@
-﻿namespace YL.Utils.Extensions
+﻿namespace Max.Core.Utils.Extensions
 {
     public static class GenericExt
     {

@@ -8,11 +8,11 @@ using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using YL.Utils.Json;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Json;
+using Max.Core.Utils.Extensions;
 using System.Linq;
 
-namespace YL.Utils.Http
+namespace Max.Core.Utils.Http
 {
     public static class HttpExtensions
     {

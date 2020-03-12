@@ -1,11 +1,11 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System;
-using YL.Utils.Env;
-using YL.Utils.Check;
-using YL.Utils.Extensions;
+using Max.Core.Utils.Env;
+using Max.Core.Utils.Check;
+using Max.Core.Utils.Extensions;
 
-namespace YL.Utils.Json
+namespace Max.Core.Utils.Json
 {
     public static class Json
     {

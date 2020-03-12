@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace YL.Utils.Http
+namespace Max.Core.Utils.Http
 {
     public class HttpMethodConst
     {

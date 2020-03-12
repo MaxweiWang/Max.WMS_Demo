@@ -2,10 +2,10 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Configuration;
 using System;
-using YL.Utils.Log;
-using YL.Utils.Json;
+using Max.Core.Utils.Log;
+using Max.Core.Utils.Json;
 
-namespace YL.NetCore.Attributes
+namespace Max.NetCore.Extensions.Attributes
 {
     public class BaseExceptionAttribute : ExceptionFilterAttribute
     {

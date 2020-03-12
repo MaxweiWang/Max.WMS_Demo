@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace YL.Utils.Extensions
+namespace Max.Core.Utils.Extensions
 {
     public static class ExceptionExt
     {

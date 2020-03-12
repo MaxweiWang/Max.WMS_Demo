@@ -4,14 +4,14 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
-using YL.Core.Entity;
-using YL.Utils.Env;
+using Max.Core.Entity;
+using Max.Core.Utils.Env;
 using IServices;
-using YL.NetCore.DI;
+using Max.NetCore.Extensions.DI;
 using Microsoft.Extensions.DependencyInjection;
-using YL.Utils.Log;
+using Max.Core.Utils.Log;
 
-namespace KopSoftWms
+namespace Max.WMS.NetCore
 {
     public class SysLogNotification : INotificationHandler<Sys_log>
     {

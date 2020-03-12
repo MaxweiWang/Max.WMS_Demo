@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
 
-namespace YL.NetCore.Autofac
+namespace Max.NetCore.Extensions.Autofac
 {
     public class AutofacConfig
     {

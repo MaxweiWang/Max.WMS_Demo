@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace YL.Utils.Json
+namespace Max.Core.Utils.Json
 {
     /// <summary>
     /// https://github.com/kevin-montrose/Jil Jil>Newtonsoft.Json

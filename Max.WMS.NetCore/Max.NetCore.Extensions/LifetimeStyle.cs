@@ -1,4 +1,4 @@
-﻿namespace YL.NetCore
+﻿namespace Max.NetCore.Extensions
 {
     /// <summary>
     /// using Microsoft.Extensions.DependencyInjection 被系统自带的ServiceLifetime取代，不在使用

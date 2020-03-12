@@ -1,11 +1,11 @@
 ﻿using IServices;
 using Microsoft.AspNetCore.Mvc;
-using YL.Core.Dto;
-using YL.NetCore.NetCoreApp;
-using YL.NetCore.Attributes;
-using YL.Utils.Pub;
+using Max.Core.Dto;
+using Max.NetCore.Extensions.NetCoreApp;
+using Max.NetCore.Extensions.Attributes;
+using Max.Core.Utils.Pub;
 
-namespace KopSoftWms.Controllers
+namespace Max.WMS.NetCore.Controllers
 {
     public class InventoryController : BaseController
     {
