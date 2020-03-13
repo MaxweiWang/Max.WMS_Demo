@@ -1,11 +1,11 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using SqlSugar;
 using Max.Core.Entity;
 using Max.Core.Utils.Json;
 using Max.Core.Utils.Table;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Wms_invmovedetailServices : BaseServices<Wms_invmovedetail>, IWms_invmovedetailServices
     {

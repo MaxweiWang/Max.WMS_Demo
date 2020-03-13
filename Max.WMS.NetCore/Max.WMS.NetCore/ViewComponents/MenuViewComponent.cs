@@ -1,4 +1,4 @@
-﻿using IServices;
+﻿using Max.Core.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;

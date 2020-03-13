@@ -1,5 +1,5 @@
 ﻿using IRepository;
-using IServices;
+using Max.Core.IServices;
 using SqlSugar;
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ using Max.Core.Utils.Log;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Table;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Wms_CustomerServices : BaseServices<Wms_Customer>, IWms_CustomerServices
     {

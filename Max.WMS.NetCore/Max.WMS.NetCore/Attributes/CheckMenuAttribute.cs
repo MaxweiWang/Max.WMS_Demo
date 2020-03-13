@@ -1,4 +1,4 @@
-﻿using IServices;
+﻿using Max.Core.IServices;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Caching.Memory;
@@ -22,6 +22,10 @@ namespace Max.WMS.NetCore.Attributes
             var viewData = (context.Controller as Controller)?.ViewData;
             var viewBag = (context.Controller as Controller)?.ViewBag;
             var services = context.HttpContext.RequestServices;
+            //var log = services.GetService(typeof(ILoggerFactory)) as ILoggerFactory;
+            //ILogger<CheckMenuAttribute> logger = log.CreateLogger<CheckMenuAttribute>();
+            //logger.LogInformation("");
+
             var properties = context.ActionDescriptor.Properties;
             var claims = context.HttpContext.User?.Claims;
             var cache = services.GetService(typeof(IMemoryCache)) as IMemoryCache;
@@ -37,8 +41,7 @@ namespace Max.WMS.NetCore.Attributes
             }
             if (viewBag != null)
             {
-                viewBag.keywords = properties["keywords"].ToString();
-                viewBag.description = properties["description"].ToString();
+                viewBag.title = properties["title"].ToString();
                 viewBag.company = properties["company"].ToString();
                 viewBag.customer = properties["customer"].ToString();
                 viewBag.nickname = claims.SingleOrDefault(c => c.Type == ClaimTypes.Name).Value;

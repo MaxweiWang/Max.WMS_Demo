@@ -1,5 +1,5 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using Microsoft.AspNetCore.Hosting;
 using SqlSugar;
 using System;
@@ -14,7 +14,7 @@ using Max.Core.Utils.Json;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Table;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Wms_stockoutServices : BaseServices<Wms_stockout>, IWms_stockoutServices
     {

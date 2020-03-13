@@ -1,4 +1,4 @@
-﻿using IServices;
+﻿using Max.Core.IServices;
 using Microsoft.AspNetCore.Mvc;
 using SqlSugar;
 using System.Linq;
@@ -6,9 +6,10 @@ using Max.Core.Dto;
 using Max.Core.Entity;
 using Max.Core.Entity.Fluent.Validation;
 using Max.NetCore.Extensions.Attributes;
-using Max.NetCore.Extensions.NetCoreApp;
+using Max.NetCore.Extensions;
 using Max.Core.Utils.Extensions;
 using Max.Core.Utils.Pub;
+using Max.WMS.NetCore.Attributes;
 
 namespace Max.WMS.NetCore.Controllers
 {

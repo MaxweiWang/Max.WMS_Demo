@@ -4,6 +4,25 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="LigerShark.WebOptimizer.Core" Version="3.0.250" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="Pomelo.AspNetCore.TimedJob" Version="1.1.0-rtm-10026" />
+    <PackageReference Include="sqlSugarCore" Version="5.0.0.11" />
+    <PackageReference Include="System.Text.Json" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Max.Core.IServices\Max.Core.IServices.csproj" />
+    <ProjectReference Include="..\Max.Core.Repository\Max.Core.Repository.csproj" />
+    <ProjectReference Include="..\Max.Core.Services\Max.Core.Services.csproj" />
+    <ProjectReference Include="..\Max.Core.Utils\Max.Core.Utils.csproj" />
+    <ProjectReference Include="..\Max.NetCore.Extensions\Max.NetCore.Extensions.csproj" />
+  </ItemGroup>
+
 
 
 </Project>

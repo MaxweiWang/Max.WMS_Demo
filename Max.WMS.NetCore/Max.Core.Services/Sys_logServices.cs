@@ -1,5 +1,5 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using Microsoft.Extensions.Configuration;
 using SqlSugar;
 using System;
@@ -10,7 +10,7 @@ using Max.Core.Utils.Json;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Table;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Sys_logServices : BaseServices<Sys_log>, ISys_logServices
     {

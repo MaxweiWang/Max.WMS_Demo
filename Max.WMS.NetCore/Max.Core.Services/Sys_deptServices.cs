@@ -1,5 +1,5 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using SqlSugar;
 using System;
 using Max.Core.Entity;
@@ -7,7 +7,7 @@ using Max.Core.Utils.Extensions;
 using Max.Core.Utils.Json;
 using Max.Core.Utils.Table;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Sys_deptServices : BaseServices<Sys_dept>, ISys_deptServices
     {

@@ -1,7 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlSugarCore" Version="5.0.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Max.Core.Dto\Max.Core.Dto.csproj" />
+    <ProjectReference Include="..\Max.Core.Entity\Max.Core.Entity.csproj" />
+    <ProjectReference Include="..\Max.NetCore.Extensions\Max.NetCore.Extensions.csproj" />
+  </ItemGroup>
 
 </Project>

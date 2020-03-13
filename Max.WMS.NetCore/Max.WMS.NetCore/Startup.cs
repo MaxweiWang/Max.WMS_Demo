@@ -1,17 +1,23 @@
 ﻿using IRepository;
-using IServices;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using Max.Core.IServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.AspNetCore.Mvc.Controllers;
-using Microsoft.AspNetCore.Mvc.Filters;
+using Max.NetCore.Extensions.Attributes;
+using Repository;
+using Max.Core.Services;
+using Max.NetCore.Extensions;
+using Max.NetCore.Extensions.DI;
+using Max.Core.Orm.SqlSugar;
+using SqlSugar;
+using MediatR;
+using Max.NetCore.Extensions.Conventions;
+using Max.Core.Utils.Json;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.Hosting;
 
 namespace Max.WMS.NetCore
 {
@@ -31,18 +37,21 @@ namespace Max.WMS.NetCore
             {
                 option.Filters.Add<BaseExceptionAttribute>();
                 //option.Filters.Add<FilterXSSAttribute>();
-                option.Conventions.Add(new ApplicationDescription("keywords", Configuration["sys:keywords"]));
-                option.Conventions.Add(new ApplicationDescription("description", Configuration["sys:description"]));
+                //option.Conventions.Add(new ApplicationDescription("keywords", Configuration["sys:keywords"]));
+                //option.Conventions.Add(new ApplicationDescription("description", Configuration["sys:description"]));
+                option.Conventions.Add(new ApplicationDescription("title", Configuration["sys:title"]));
                 option.Conventions.Add(new ApplicationDescription("company", Configuration["sys:company"]));
                 option.Conventions.Add(new ApplicationDescription("customer", Configuration["sys:customer"]));
             }).SetCompatibilityVersion(CompatibilityVersion.Latest);
+            services.AddControllersWithViews();
+            services.AddRazorPages().AddRazorRuntimeCompilation();
             //services.Configure<CookiePolicyOptions>(options =>
             //{
             //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
             //    options.CheckConsentNeeded = context => true;
             //    options.MinimumSameSitePolicy = SameSiteMode.None;
             //});
-            services.AddTimedJob();
+            //services.AddTimedJob();
             services.AddOptions();
             services.AddXsrf();
             services.AddXss();
@@ -86,42 +95,11 @@ namespace Max.WMS.NetCore
             //@1 DependencyInjection 注册
             services.AddNlog(); //添加Nlog
             RegisterBase(services);
-            //services.AddScoped(provider =>
-            //{
-            //    Func<string, SqlSugarClient> func = key =>
-            //    {
-            //        switch (key)
-            //        {
-            //            case "1":
-            //                return new SqlSugarClient(new ConnectionConfig()
-            //                {
-            //                    ConfigId = "111",
-            //                    ConnectionString = sqlSugarConfig.Item2,
-            //                    DbType = sqlSugarConfig.Item1,
-            //                    IsAutoCloseConnection = true,
-            //                    InitKeyType = InitKeyType.Attribute,
-            //                });
-
-            //            case "2":
-            //                return new SqlSugarClient(new ConnectionConfig()
-            //                {
-            //                    ConfigId = "222",
-            //                    ConnectionString = sqlSugarConfig.Item2,
-            //                    DbType = sqlSugarConfig.Item1,
-            //                    IsAutoCloseConnection = true,
-            //                    InitKeyType = InitKeyType.Attribute,
-            //                });
-
-            //            default:
-            //                throw new NotSupportedException($"Not Support key : {key}");
-            //        }
-            //    };
-            //    return func;
-            //});
-            ServiceExtension.RegisterAssembly(services, "Services");
-            ServiceExtension.RegisterAssembly(services, "Repository");
-            var bulid = services.BuildServiceProvider();
-            ServiceResolve.SetServiceResolve(bulid);
+          
+            ServiceExtension.RegisterAssembly(services, "Max.Core.Services");
+            ServiceExtension.RegisterAssembly(services, "Max.Core.Repository");
+            //var bulid = services.BuildServiceProvider();
+            //ServiceResolve.SetServiceResolve(bulid);
         }
 
         /// <summary>
@@ -151,7 +129,7 @@ namespace Max.WMS.NetCore
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -160,29 +138,43 @@ namespace Max.WMS.NetCore
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
             }
             app.UseGlobalCore();
             app.UseExecuteTime();
-            app.UseTimedJob();
+           // app.UseTimedJob();
             app.UseResponseCompression();  //使用压缩
             app.UseResponseCaching();    //使用缓存
 
             app.UseStaticFiles(); //使用静态文件
             app.UseCookiePolicy();
-            app.UseAuthentication();
-
             app.UseStatusCodePagesWithRedirects("/Home/Error/{0}");
-            app.UseMvc(routes =>
+            app.UseAuthentication();
+            //app.UseRouting();
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Login}/{action=Index}/{id?}");
-                // Areas
-                routes.MapRoute(
+                endpoints.MapControllerRoute(
+                  name: "default",
+                  pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapAreaControllerRoute(
                     name: "areas",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-                  );
+                    areaName: "areas",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
+
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=Login}/{action=Index}/{id?}");
+            //    // Areas
+            //    routes.MapRoute(
+            //        name: "areas",
+            //        template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+            //      );
+            //});
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Max.NetCore.Extensions.Attributes;
-using Max.NetCore.Extensions.NetCoreApp;
-using IServices;
+using Max.Core.IServices;
 using Max.Core.Utils.Table;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Extensions;
@@ -12,6 +11,8 @@ using System.Linq;
 using SqlSugar;
 using System.Collections.Generic;
 using Max.Core.Utils.Security;
+using Max.NetCore.Extensions;
+using Max.WMS.NetCore.Attributes;
 
 namespace Max.WMS.NetCore.Controllers
 {

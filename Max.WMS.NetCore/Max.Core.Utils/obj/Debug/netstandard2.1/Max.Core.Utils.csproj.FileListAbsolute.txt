@@ -1,0 +1,9 @@
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Utils\obj\Debug\netstandard2.1\Max.Core.Utils.AssemblyInfoInputs.cache
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Utils\obj\Debug\netstandard2.1\Max.Core.Utils.AssemblyInfo.cs
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Utils\bin\Debug\netstandard2.1\NLog.config
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Utils\bin\Debug\netstandard2.1\Max.Core.Utils.deps.json
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Utils\bin\Debug\netstandard2.1\Max.Core.Utils.dll
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Utils\bin\Debug\netstandard2.1\Max.Core.Utils.pdb
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Utils\obj\Debug\netstandard2.1\Max.Core.Utils.dll
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Utils\obj\Debug\netstandard2.1\Max.Core.Utils.pdb
+D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Utils\obj\Debug\netstandard2.1\Max.Core.Utils.csprojAssemblyReference.cache

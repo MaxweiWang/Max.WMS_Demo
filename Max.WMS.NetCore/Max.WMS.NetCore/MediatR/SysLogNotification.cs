@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using MediatR;
 using Max.Core.Entity;
 using Max.Core.Utils.Env;
-using IServices;
+using Max.Core.IServices;
 using Max.NetCore.Extensions.DI;
 using Microsoft.Extensions.DependencyInjection;
 using Max.Core.Utils.Log;

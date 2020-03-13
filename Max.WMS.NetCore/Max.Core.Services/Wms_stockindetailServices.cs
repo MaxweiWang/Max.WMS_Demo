@@ -1,12 +1,12 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using Max.Core.Entity;
 using Max.Core.Utils.Table;
 using SqlSugar;
 using System;
 using Max.Core.Utils.Json;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Wms_stockindetailServices : BaseServices<Wms_stockindetail>, IWms_stockindetailServices
     {

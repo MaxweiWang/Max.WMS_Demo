@@ -1,5 +1,5 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using Repository;
 using Max.Core.Entity;
 using System;
@@ -9,7 +9,7 @@ using Max.Core.Utils.Table;
 using SqlSugar;
 using Max.Core.Utils.Json;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Wms_stockoutdetailServices : BaseServices<Wms_stockoutdetail>, IWms_stockoutdetailServices
     {

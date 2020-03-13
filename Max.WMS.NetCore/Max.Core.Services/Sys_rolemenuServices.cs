@@ -1,9 +1,9 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 
 using Max.Core.Entity;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Sys_rolemenuServices : BaseServices<Sys_rolemenu>, ISys_rolemenuServices
     {

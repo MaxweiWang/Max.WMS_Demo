@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Max.NetCore.Extensions;
 using Max.Core.Utils.Table;
 
-namespace IServices
+namespace Max.Core.IServices
 {
     public interface IBaseServices<T> : IDependency where T : class, new()
     {

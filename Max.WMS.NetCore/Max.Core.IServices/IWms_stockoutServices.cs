@@ -2,7 +2,7 @@ using SqlSugar;
 using Max.Core.Dto;
 using Max.Core.Entity;
 
-namespace IServices
+namespace Max.Core.IServices
 {
     public interface IWms_stockoutServices : IBaseServices<Wms_stockout>
     {

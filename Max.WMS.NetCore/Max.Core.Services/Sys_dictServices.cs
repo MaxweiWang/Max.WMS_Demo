@@ -1,5 +1,5 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using SqlSugar;
 using System;
 using Max.Core.Dto;
@@ -8,7 +8,7 @@ using Max.Core.Utils.Extensions;
 using Max.Core.Utils.Json;
 using Max.Core.Utils.Table;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Sys_dictServices : BaseServices<Sys_dict>, ISys_dictServices
     {

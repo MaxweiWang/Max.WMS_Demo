@@ -1,4 +1,4 @@
-﻿using IServices;
+﻿using Max.Core.IServices;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
@@ -13,12 +13,13 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Max.Core.Dto;
 using Max.Core.Entity;
-using Max.NetCore.Extensions.NetCoreApp;
+using Max.NetCore.Extensions;
 using Max.Core.Utils.Extensions;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Security;
 using Max.Core.Utils.Json;
 using MediatR;
+using Max.WMS.NetCore.Attributes;
 
 namespace Max.WMS.NetCore.Controllers
 {
@@ -46,15 +47,15 @@ namespace Max.WMS.NetCore.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
+            //HttpContext.Request.EnableRewind();
             //TempData["returnUrl"] = returnUrl;
-
-            ViewBag.keywords = GetDescriptor("keywords");
-            ViewBag.description = GetDescriptor("description");
-            ViewBag.customer = GetDescriptor("customer");
+            ViewBag.title = GetDescriptor("title");
             ViewBag.company = GetDescriptor("company");
+            ViewBag.customer = GetDescriptor("customer");
             return View();
         }
 
+        [Route("Login/CheckLoginAsync")]
         [HttpPost]
         [AllowAnonymous]
         public async Task<IActionResult> CheckLoginAsync([FromBody]SysUserDto sys)
@@ -112,6 +113,15 @@ namespace Max.WMS.NetCore.Controllers
                     Url = GetUrl(),
                     LogType = LogType.login.EnumToString()
                 });
+                //_logServices.Insert(new Sys_log
+                //{
+                //    LogId = PubId.SnowflakeId,
+                //    Browser = GetBrowser(),
+                //    Description = $"{_xss.Filter(sys.UserNickname)}登录失败",
+                //    LogIp = GetIp(),
+                //    Url = GetUrl(),
+                //    LogType = LogType.login.EnumToString()
+                //});
             }
             item.Item3 = null;
             //return Json(item);

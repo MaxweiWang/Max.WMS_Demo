@@ -1,9 +1,9 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using Max.Core.Entity;
 using Max.Core.Utils.Extensions;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Sys_serialnumServices : BaseServices<Sys_serialnum>, ISys_serialnumServices
     {

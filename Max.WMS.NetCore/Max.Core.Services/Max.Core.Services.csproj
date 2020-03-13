@@ -4,4 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Max.Core.IServices\Max.Core.IServices.csproj" />
+    <ProjectReference Include="..\Max.Core.Repository\Max.Core.Repository.csproj" />
+    <ProjectReference Include="..\Max.Core.Utils\Max.Core.Utils.csproj" />
+  </ItemGroup>
+
 </Project>

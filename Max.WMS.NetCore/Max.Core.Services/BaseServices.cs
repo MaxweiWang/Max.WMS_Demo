@@ -1,5 +1,5 @@
 ﻿using IRepository;
-using IServices;
+using Max.Core.IServices;
 using SqlSugar;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using Max.Core.Utils.Extensions;
 using System.Data;
 using System.Threading.Tasks;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class BaseServices<T> : IBaseServices<T> where T : class, new()
     {

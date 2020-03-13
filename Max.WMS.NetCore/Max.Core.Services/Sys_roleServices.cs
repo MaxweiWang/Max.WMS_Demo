@@ -1,5 +1,5 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using SqlSugar;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using Max.Core.Utils.Json;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Table;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Sys_roleServices : BaseServices<Sys_role>, ISys_roleServices
     {

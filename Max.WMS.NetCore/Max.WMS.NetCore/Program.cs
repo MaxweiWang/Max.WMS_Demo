@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore;
+﻿using Max.Core.Utils.Configs;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog.Web;
 using System.Text;
@@ -13,13 +15,16 @@ namespace Max.WMS.NetCore
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
+        public static IHostBuilder CreateWebHostBuilder(string[] args)
         {
             var config = ConfigUtil.GetConfiguration;
             if (string.IsNullOrWhiteSpace(config["urls"]))
             {
-                return WebHost.CreateDefaultBuilder(args)
-                 .UseStartup<Startup>();
+                return Host.CreateDefaultBuilder(args)
+             .ConfigureWebHostDefaults(webBuilder =>
+             {
+                 webBuilder.UseStartup<Startup>();
+             });
                 //.ConfigureLogging(logging =>
                 //{
                 //    logging.ClearProviders();
@@ -29,9 +34,12 @@ namespace Max.WMS.NetCore
             }
             else
             {
-                return WebHost.CreateDefaultBuilder(args)
-                    .UseConfiguration(ConfigUtil.GetConfiguration)
-                    .UseStartup<Startup>();
+                return Host.CreateDefaultBuilder(args)
+                           .ConfigureWebHostDefaults(webBuilder =>
+                           {
+                               webBuilder.UseConfiguration(ConfigUtil.GetConfiguration);
+                               webBuilder.UseStartup<Startup>();
+                           });
                 //.ConfigureLogging(logging =>
                 //{
                 //    logging.ClearProviders();

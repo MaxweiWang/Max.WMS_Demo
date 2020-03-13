@@ -1,5 +1,5 @@
 ﻿using FluentValidation.Results;
-using IServices;
+using Max.Core.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SqlSugar;
@@ -8,12 +8,13 @@ using System.Linq;
 using Max.Core.Entity;
 using Max.Core.Entity.Fluent.Validation;
 using Max.NetCore.Extensions.Attributes;
-using Max.NetCore.Extensions.NetCoreApp;
+using Max.NetCore.Extensions;
 using Max.Core.Utils.Delegate;
 using Max.Core.Utils.Extensions;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Security;
 using Max.Core.Utils.Table;
+using Max.WMS.NetCore.Attributes;
 
 namespace Max.WMS.NetCore.Controllers
 {

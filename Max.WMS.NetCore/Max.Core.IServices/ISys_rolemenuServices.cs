@@ -1,6 +1,6 @@
 using Max.Core.Entity;
 
-namespace IServices
+namespace Max.Core.IServices
 {
     public interface ISys_rolemenuServices : IBaseServices<Sys_rolemenu>
     {

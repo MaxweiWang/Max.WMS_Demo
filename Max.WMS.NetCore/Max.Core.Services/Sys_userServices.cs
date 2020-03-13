@@ -1,5 +1,5 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using SqlSugar;
 using System;
 using Max.Core.Dto;
@@ -9,8 +9,9 @@ using Max.Core.Utils.Json;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Security;
 using Max.Core.Utils.Table;
+using Max.Core.Services;
 
-namespace Services
+namespace ServiMax.Core.Servicesces
 {
     public class Sys_userServices : BaseServices<Sys_user>, ISys_userServices
     {

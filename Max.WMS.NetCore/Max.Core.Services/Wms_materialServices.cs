@@ -1,5 +1,5 @@
 using IRepository;
-using IServices;
+using Max.Core.IServices;
 using SqlSugar;
 using System;
 using Max.Core.Entity;
@@ -9,7 +9,7 @@ using Max.Core.Utils.Json;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Table;
 
-namespace Services
+namespace Max.Core.Services
 {
     public class Wms_materialServices : BaseServices<Wms_material>, IWms_materialServices
     {
