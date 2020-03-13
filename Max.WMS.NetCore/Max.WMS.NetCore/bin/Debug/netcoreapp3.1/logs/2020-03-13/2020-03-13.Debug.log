@@ -1,0 +1,21 @@
+
+date： 2020/03/13 21:16:01.908
+level： Debug
+logger： Max.Core.Utils.Log.NlogUtil
+machinename： MAXWEI 
+clientip：192.168.1.2
+message： /Home/Index 
+exception：Object reference not set to an instance of an object. 
+appdomain： 0001:Max.WMS.NetCore
+assembly-version： 1.0.0.0
+basedir： D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\ 
+callsite： Max.Core.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 1
+nlogdir： D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1 
+processid： 12532
+processname： iisexpress 
+traceid：   
+specialfolder： C:\Users\wangM\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------

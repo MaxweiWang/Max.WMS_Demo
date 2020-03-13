@@ -110,7 +110,7 @@ function getLodop(oOBJECT, oEMBED) {
                 LODOP = document.createElement("object");
                 LODOP.setAttribute("width", 0);
                 LODOP.setAttribute("height", 0);
-                LODOP.setAttribute("stMax.WMS.NetCoree", "position:absolute;left:0px;top:-100px;width:0px;height:0px;");
+                LODOP.setAttribute("style", "position:absolute;left:0px;top:-100px;width:0px;height:0px;");
                 if (isIE)
                     LODOP.setAttribute("classid", "clsid:2105C259-1E0C-4534-8141-A753534CB4CA");
                 else

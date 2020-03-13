@@ -3833,7 +3833,7 @@ function bindObjectProps (
       var loop = function ( key ) {
         if (
           key === 'class' ||
-          key === 'stMax.WMS.NetCoree' ||
+          key === 'style' ||
           isReservedAttribute(key)
         ) {
           hash = data;
@@ -4455,11 +4455,11 @@ function applyNS (vnode, ns, force) {
 }
 
 // ref #5318
-// necessary to ensure parent re-render when deep bindings like :stMax.WMS.NetCoree and
+// necessary to ensure parent re-render when deep bindings like :style and
 // :class are used on slot nodes
 function registerDeepBindings (data) {
-  if (isObject(data.stMax.WMS.NetCoree)) {
-    traverse(data.stMax.WMS.NetCoree);
+  if (isObject(data.style)) {
+    traverse(data.style);
   }
   if (isObject(data.class)) {
     traverse(data.class);
@@ -5081,7 +5081,7 @@ Vue.version = '2.5.17';
 
 // these are reserved for web because they are directly compiled away
 // during template compilation
-var isReservedAttr = makeMap('stMax.WMS.NetCoree,class');
+var isReservedAttr = makeMap('style,class');
 
 // attributes that should be using props for binding
 var acceptValue = makeMap('input,textarea,option,select,progress');
@@ -5208,7 +5208,7 @@ var namespaceMap = {
 };
 
 var isHTMLTag = makeMap(
-  'html,body,base,head,link,meta,stMax.WMS.NetCoree,title,' +
+  'html,body,base,head,link,meta,style,title,' +
   'address,article,aside,footer,header,h1,h2,h3,h4,h5,h6,hgroup,nav,section,' +
   'div,dd,dl,dt,figcaption,figure,picture,hr,img,li,main,ol,p,pre,ul,' +
   'a,b,abbr,bdi,bdo,br,cite,code,data,dfn,em,i,kbd,mark,q,rp,rt,rtc,ruby,' +
@@ -5226,7 +5226,7 @@ var isHTMLTag = makeMap(
 var isSVG = makeMap(
   'svg,animate,circle,clippath,cursor,defs,desc,ellipse,filter,font-face,' +
   'foreignObject,g,glyph,image,line,marker,mask,missing-glyph,path,pattern,' +
-  'polygon,polMax.WMS.NetCoreine,rect,switch,symbol,text,textpath,tspan,use,view',
+  'polygon,polyline,rect,switch,symbol,text,textpath,tspan,use,view',
   true
 );
 
@@ -5349,7 +5349,7 @@ function setTextContent (node, text) {
   node.textContent = text;
 }
 
-function setStMax.WMS.NetCoreeScope (node, scopeId) {
+function setStyleScope (node, scopeId) {
   node.setAttribute(scopeId, '');
 }
 
@@ -5366,7 +5366,7 @@ var nodeOps = Object.freeze({
 	nextSibling: nextSibling,
 	tagName: tagName,
 	setTextContent: setTextContent,
-	setStMax.WMS.NetCoreeScope: setStMax.WMS.NetCoreeScope
+	setStyleScope: setStyleScope
 });
 
 /*  */
@@ -5697,12 +5697,12 @@ function createPatchFunction (backend) {
   function setScope (vnode) {
     var i;
     if (isDef(i = vnode.fnScopeId)) {
-      nodeOps.setStMax.WMS.NetCoreeScope(vnode.elm, i);
+      nodeOps.setStyleScope(vnode.elm, i);
     } else {
       var ancestor = vnode;
       while (ancestor) {
         if (isDef(i = ancestor.context) && isDef(i = i.$options._scopeId)) {
-          nodeOps.setStMax.WMS.NetCoreeScope(vnode.elm, i);
+          nodeOps.setStyleScope(vnode.elm, i);
         }
         ancestor = ancestor.parent;
       }
@@ -5713,7 +5713,7 @@ function createPatchFunction (backend) {
       i !== vnode.fnContext &&
       isDef(i = i.$options._scopeId)
     ) {
-      nodeOps.setStMax.WMS.NetCoreeScope(vnode.elm, i);
+      nodeOps.setStyleScope(vnode.elm, i);
     }
   }
 
@@ -5952,9 +5952,9 @@ function createPatchFunction (backend) {
   var hydrationBailed = false;
   // list of modules that can skip create hook during hydration because they
   // are already rendered on the client or has no need for initialization
-  // Note: stMax.WMS.NetCoree is excluded because it relies on initial clone for future
+  // Note: style is excluded because it relies on initial clone for future
   // deep updates (#7063).
-  var isRenderedModule = makeMap('attrs,class,staticClass,staticStMax.WMS.NetCoree,key');
+  var isRenderedModule = makeMap('attrs,class,staticClass,staticStyle,key');
 
   // Note: this is a browser-only function so we can assume elms are DOM nodes.
   function hydrate (elm, vnode, insertedVnodeQueue, inVPre) {
@@ -7193,7 +7193,7 @@ var domProps = {
 
 /*  */
 
-var parseStMax.WMS.NetCoreeText = cached(function (cssText) {
+var parseStyleText = cached(function (cssText) {
   var res = {};
   var listDelimiter = /;(?![^(]*\))/g;
   var propertyDelimiter = /:(.+)/;
@@ -7206,34 +7206,34 @@ var parseStMax.WMS.NetCoreeText = cached(function (cssText) {
   return res
 });
 
-// merge static and dynamic stMax.WMS.NetCoree data on the same vnode
-function normalizeStMax.WMS.NetCoreeData (data) {
-  var stMax.WMS.NetCoree = normalizeStMax.WMS.NetCoreeBinding(data.stMax.WMS.NetCoree);
-  // static stMax.WMS.NetCoree is pre-processed into an object during compilation
+// merge static and dynamic style data on the same vnode
+function normalizeStyleData (data) {
+  var style = normalizeStyleBinding(data.style);
+  // static style is pre-processed into an object during compilation
   // and is always a fresh object, so it's safe to merge into it
-  return data.staticStMax.WMS.NetCoree
-    ? extend(data.staticStMax.WMS.NetCoree, stMax.WMS.NetCoree)
-    : stMax.WMS.NetCoree
+  return data.staticStyle
+    ? extend(data.staticStyle, style)
+    : style
 }
 
 // normalize possible array / string values into Object
-function normalizeStMax.WMS.NetCoreeBinding (bindingStMax.WMS.NetCoree) {
-  if (Array.isArray(bindingStMax.WMS.NetCoree)) {
-    return toObject(bindingStMax.WMS.NetCoree)
+function normalizeStyleBinding (bindingStyle) {
+  if (Array.isArray(bindingStyle)) {
+    return toObject(bindingStyle)
   }
-  if (typeof bindingStMax.WMS.NetCoree === 'string') {
-    return parseStMax.WMS.NetCoreeText(bindingStMax.WMS.NetCoree)
+  if (typeof bindingStyle === 'string') {
+    return parseStyleText(bindingStyle)
   }
-  return bindingStMax.WMS.NetCoree
+  return bindingStyle
 }
 
 /**
- * parent component stMax.WMS.NetCoree should be after child's
- * so that parent component's stMax.WMS.NetCoree could override it
+ * parent component style should be after child's
+ * so that parent component's style could override it
  */
-function getStMax.WMS.NetCoree (vnode, checkChild) {
+function getStyle (vnode, checkChild) {
   var res = {};
-  var stMax.WMS.NetCoreeData;
+  var styleData;
 
   if (checkChild) {
     var childNode = vnode;
@@ -7241,21 +7241,21 @@ function getStMax.WMS.NetCoree (vnode, checkChild) {
       childNode = childNode.componentInstance._vnode;
       if (
         childNode && childNode.data &&
-        (stMax.WMS.NetCoreeData = normalizeStMax.WMS.NetCoreeData(childNode.data))
+        (styleData = normalizeStyleData(childNode.data))
       ) {
-        extend(res, stMax.WMS.NetCoreeData);
+        extend(res, styleData);
       }
     }
   }
 
-  if ((stMax.WMS.NetCoreeData = normalizeStMax.WMS.NetCoreeData(vnode.data))) {
-    extend(res, stMax.WMS.NetCoreeData);
+  if ((styleData = normalizeStyleData(vnode.data))) {
+    extend(res, styleData);
   }
 
   var parentNode = vnode;
   while ((parentNode = parentNode.parent)) {
-    if (parentNode.data && (stMax.WMS.NetCoreeData = normalizeStMax.WMS.NetCoreeData(parentNode.data))) {
-      extend(res, stMax.WMS.NetCoreeData);
+    if (parentNode.data && (styleData = normalizeStyleData(parentNode.data))) {
+      extend(res, styleData);
     }
   }
   return res
@@ -7268,9 +7268,9 @@ var importantRE = /\s*!important$/;
 var setProp = function (el, name, val) {
   /* istanbul ignore if */
   if (cssVarRE.test(name)) {
-    el.stMax.WMS.NetCoree.setProperty(name, val);
+    el.style.setProperty(name, val);
   } else if (importantRE.test(val)) {
-    el.stMax.WMS.NetCoree.setProperty(name, val.replace(importantRE, ''), 'important');
+    el.style.setProperty(name, val.replace(importantRE, ''), 'important');
   } else {
     var normalizedName = normalize(name);
     if (Array.isArray(val)) {
@@ -7278,78 +7278,78 @@ var setProp = function (el, name, val) {
       // {display: ["-webkit-box", "-ms-flexbox", "flex"]}
       // Set them one by one, and the browser will only set those it can recognize
       for (var i = 0, len = val.length; i < len; i++) {
-        el.stMax.WMS.NetCoree[normalizedName] = val[i];
+        el.style[normalizedName] = val[i];
       }
     } else {
-      el.stMax.WMS.NetCoree[normalizedName] = val;
+      el.style[normalizedName] = val;
     }
   }
 };
 
 var vendorNames = ['Webkit', 'Moz', 'ms'];
 
-var emptyStMax.WMS.NetCoree;
+var emptyStyle;
 var normalize = cached(function (prop) {
-  emptyStMax.WMS.NetCoree = emptyStMax.WMS.NetCoree || document.createElement('div').stMax.WMS.NetCoree;
+  emptyStyle = emptyStyle || document.createElement('div').style;
   prop = camelize(prop);
-  if (prop !== 'filter' && (prop in emptyStMax.WMS.NetCoree)) {
+  if (prop !== 'filter' && (prop in emptyStyle)) {
     return prop
   }
   var capName = prop.charAt(0).toUpperCase() + prop.slice(1);
   for (var i = 0; i < vendorNames.length; i++) {
     var name = vendorNames[i] + capName;
-    if (name in emptyStMax.WMS.NetCoree) {
+    if (name in emptyStyle) {
       return name
     }
   }
 });
 
-function updateStMax.WMS.NetCoree (oldVnode, vnode) {
+function updateStyle (oldVnode, vnode) {
   var data = vnode.data;
   var oldData = oldVnode.data;
 
-  if (isUndef(data.staticStMax.WMS.NetCoree) && isUndef(data.stMax.WMS.NetCoree) &&
-    isUndef(oldData.staticStMax.WMS.NetCoree) && isUndef(oldData.stMax.WMS.NetCoree)
+  if (isUndef(data.staticStyle) && isUndef(data.style) &&
+    isUndef(oldData.staticStyle) && isUndef(oldData.style)
   ) {
     return
   }
 
   var cur, name;
   var el = vnode.elm;
-  var oldStaticStMax.WMS.NetCoree = oldData.staticStMax.WMS.NetCoree;
-  var oldStMax.WMS.NetCoreeBinding = oldData.normalizedStMax.WMS.NetCoree || oldData.stMax.WMS.NetCoree || {};
+  var oldStaticStyle = oldData.staticStyle;
+  var oldStyleBinding = oldData.normalizedStyle || oldData.style || {};
 
-  // if static stMax.WMS.NetCoree exists, stMax.WMS.NetCoreebinding already merged into it when doing normalizeStMax.WMS.NetCoreeData
-  var oldStMax.WMS.NetCoree = oldStaticStMax.WMS.NetCoree || oldStMax.WMS.NetCoreeBinding;
+  // if static style exists, stylebinding already merged into it when doing normalizeStyleData
+  var oldStyle = oldStaticStyle || oldStyleBinding;
 
-  var stMax.WMS.NetCoree = normalizeStMax.WMS.NetCoreeBinding(vnode.data.stMax.WMS.NetCoree) || {};
+  var style = normalizeStyleBinding(vnode.data.style) || {};
 
-  // store normalized stMax.WMS.NetCoree under a different key for next diff
+  // store normalized style under a different key for next diff
   // make sure to clone it if it's reactive, since the user likely wants
   // to mutate it.
-  vnode.data.normalizedStMax.WMS.NetCoree = isDef(stMax.WMS.NetCoree.__ob__)
-    ? extend({}, stMax.WMS.NetCoree)
-    : stMax.WMS.NetCoree;
+  vnode.data.normalizedStyle = isDef(style.__ob__)
+    ? extend({}, style)
+    : style;
 
-  var newStMax.WMS.NetCoree = getStMax.WMS.NetCoree(vnode, true);
+  var newStyle = getStyle(vnode, true);
 
-  for (name in oldStMax.WMS.NetCoree) {
-    if (isUndef(newStMax.WMS.NetCoree[name])) {
+  for (name in oldStyle) {
+    if (isUndef(newStyle[name])) {
       setProp(el, name, '');
     }
   }
-  for (name in newStMax.WMS.NetCoree) {
-    cur = newStMax.WMS.NetCoree[name];
-    if (cur !== oldStMax.WMS.NetCoree[name]) {
+  for (name in newStyle) {
+    cur = newStyle[name];
+    if (cur !== oldStyle[name]) {
       // ie9 setting to null has no effect, must use empty string
       setProp(el, name, cur == null ? '' : cur);
     }
   }
 }
 
-var stMax.WMS.NetCoree = {
-  create: updateStMax.WMS.NetCoree,
-  update: updateStMax.WMS.NetCoree
+var style = {
+  create: updateStyle,
+  update: updateStyle
 }
 
 /*  */
@@ -7531,12 +7531,12 @@ function whenTransitionEnds (
 var transformRE = /\b(transform|all)(,|$)/;
 
 function getTransitionInfo (el, expectedType) {
-  var stMax.WMS.NetCorees = window.getComputedStMax.WMS.NetCoree(el);
-  var transitionDelays = stMax.WMS.NetCorees[transitionProp + 'Delay'].split(', ');
-  var transitionDurations = stMax.WMS.NetCorees[transitionProp + 'Duration'].split(', ');
+  var styles = window.getComputedStyle(el);
+  var transitionDelays = styles[transitionProp + 'Delay'].split(', ');
+  var transitionDurations = styles[transitionProp + 'Duration'].split(', ');
   var transitionTimeout = getTimeout(transitionDelays, transitionDurations);
-  var animationDelays = stMax.WMS.NetCorees[animationProp + 'Delay'].split(', ');
-  var animationDurations = stMax.WMS.NetCorees[animationProp + 'Duration'].split(', ');
+  var animationDelays = styles[animationProp + 'Delay'].split(', ');
+  var animationDurations = styles[animationProp + 'Duration'].split(', ');
   var animationTimeout = getTimeout(animationDelays, animationDurations);
 
   var type;
@@ -7570,7 +7570,7 @@ function getTransitionInfo (el, expectedType) {
   }
   var hasTransform =
     type === TRANSITION &&
-    transformRE.test(stMax.WMS.NetCorees[transitionProp + 'Property']);
+    transformRE.test(styles[transitionProp + 'Property']);
   return {
     type: type,
     timeout: timeout,
@@ -7775,7 +7775,7 @@ function leave (vnode, rm) {
   var leave = data.leave;
   var afterLeave = data.afterLeave;
   var leaveCancelled = data.leaveCancelled;
-  var delaMax.WMS.NetCoreeave = data.delaMax.WMS.NetCoreeave;
+  var delayLeave = data.delayLeave;
   var duration = data.duration;
 
   var expectsCSS = css !== false && !isIE9;
@@ -7811,8 +7811,8 @@ function leave (vnode, rm) {
     el._leaveCb = null;
   });
 
-  if (delaMax.WMS.NetCoreeave) {
-    delaMax.WMS.NetCoreeave(performLeave);
+  if (delayLeave) {
+    delayLeave(performLeave);
   } else {
     performLeave();
   }
@@ -7919,7 +7919,7 @@ var platformModules = [
   klass,
   events,
   domProps,
-  stMax.WMS.NetCoree,
+  style,
   transition
 ]
 
@@ -8086,14 +8086,14 @@ var show = {
     vnode = locateNode(vnode);
     var transition$$1 = vnode.data && vnode.data.transition;
     var originalDisplay = el.__vOriginalDisplay =
-      el.stMax.WMS.NetCoree.display === 'none' ? '' : el.stMax.WMS.NetCoree.display;
+      el.style.display === 'none' ? '' : el.style.display;
     if (value && transition$$1) {
       vnode.data.show = true;
       enter(vnode, function () {
-        el.stMax.WMS.NetCoree.display = originalDisplay;
+        el.style.display = originalDisplay;
       });
     } else {
-      el.stMax.WMS.NetCoree.display = value ? originalDisplay : 'none';
+      el.style.display = value ? originalDisplay : 'none';
     }
   },
 
@@ -8109,15 +8109,15 @@ var show = {
       vnode.data.show = true;
       if (value) {
         enter(vnode, function () {
-          el.stMax.WMS.NetCoree.display = el.__vOriginalDisplay;
+          el.style.display = el.__vOriginalDisplay;
         });
       } else {
         leave(vnode, function () {
-          el.stMax.WMS.NetCoree.display = 'none';
+          el.style.display = 'none';
         });
       }
     } else {
-      el.stMax.WMS.NetCoree.display = value ? el.__vOriginalDisplay : 'none';
+      el.style.display = value ? el.__vOriginalDisplay : 'none';
     }
   },
 
@@ -8129,7 +8129,7 @@ var show = {
     isDestroy
   ) {
     if (!isDestroy) {
-      el.stMax.WMS.NetCoree.display = el.__vOriginalDisplay;
+      el.style.display = el.__vOriginalDisplay;
     }
   }
 }
@@ -8320,7 +8320,7 @@ var Transition = {
         var performLeave = function () { delayedLeave(); };
         mergeVNodeHook(data, 'afterEnter', performLeave);
         mergeVNodeHook(data, 'enterCancelled', performLeave);
-        mergeVNodeHook(oldData, 'delaMax.WMS.NetCoreeave', function (leave) { delayedLeave = leave; });
+        mergeVNodeHook(oldData, 'delayLeave', function (leave) { delayedLeave = leave; });
       }
     }
 
@@ -8426,7 +8426,7 @@ var TransitionGroup = {
     children.forEach(function (c) {
       if (c.data.moved) {
         var el = c.elm;
-        var s = el.stMax.WMS.NetCoree;
+        var s = el.style;
         addTransitionClass(el, moveClass);
         s.transform = s.WebkitTransform = s.transitionDuration = '';
         el.addEventListener(transitionEndEvent, el._moveCb = function cb (e) {
@@ -8460,7 +8460,7 @@ var TransitionGroup = {
         el._transitionClasses.forEach(function (cls) { removeClass(clone, cls); });
       }
       addClass(clone, moveClass);
-      clone.stMax.WMS.NetCoree.display = 'none';
+      clone.style.display = 'none';
       this.$el.appendChild(clone);
       var info = getTransitionInfo(clone);
       this.$el.removeChild(clone);
@@ -8491,7 +8491,7 @@ function applyTranslation (c) {
   var dy = oldPos.top - newPos.top;
   if (dx || dy) {
     c.data.moved = true;
-    var s = c.elm.stMax.WMS.NetCoree;
+    var s = c.elm.style;
     s.transform = s.WebkitTransform = "translate(" + dx + "px," + dy + "px)";
     s.transitionDuration = '0s';
   }
@@ -8653,42 +8653,42 @@ var klass$1 = {
 
 function transformNode$1 (el, options) {
   var warn = options.warn || baseWarn;
-  var staticStMax.WMS.NetCoree = getAndRemoveAttr(el, 'stMax.WMS.NetCoree');
-  if (staticStMax.WMS.NetCoree) {
+  var staticStyle = getAndRemoveAttr(el, 'style');
+  if (staticStyle) {
     /* istanbul ignore if */
     {
-      var res = parseText(staticStMax.WMS.NetCoree, options.delimiters);
+      var res = parseText(staticStyle, options.delimiters);
       if (res) {
         warn(
-          "stMax.WMS.NetCoree=\"" + staticStMax.WMS.NetCoree + "\": " +
+          "style=\"" + staticStyle + "\": " +
           'Interpolation inside attributes has been removed. ' +
           'Use v-bind or the colon shorthand instead. For example, ' +
-          'instead of <div stMax.WMS.NetCoree="{{ val }}">, use <div :stMax.WMS.NetCoree="val">.'
+          'instead of <div style="{{ val }}">, use <div :style="val">.'
         );
       }
     }
-    el.staticStMax.WMS.NetCoree = JSON.stringify(parseStMax.WMS.NetCoreeText(staticStMax.WMS.NetCoree));
+    el.staticStyle = JSON.stringify(parseStyleText(staticStyle));
   }
 
-  var stMax.WMS.NetCoreeBinding = getBindingAttr(el, 'stMax.WMS.NetCoree', false /* getStatic */);
-  if (stMax.WMS.NetCoreeBinding) {
-    el.stMax.WMS.NetCoreeBinding = stMax.WMS.NetCoreeBinding;
+  var styleBinding = getBindingAttr(el, 'style', false /* getStatic */);
+  if (styleBinding) {
+    el.styleBinding = styleBinding;
   }
 }
 
 function genData$1 (el) {
   var data = '';
-  if (el.staticStMax.WMS.NetCoree) {
-    data += "staticStMax.WMS.NetCoree:" + (el.staticStMax.WMS.NetCoree) + ",";
+  if (el.staticStyle) {
+    data += "staticStyle:" + (el.staticStyle) + ",";
   }
-  if (el.stMax.WMS.NetCoreeBinding) {
-    data += "stMax.WMS.NetCoree:(" + (el.stMax.WMS.NetCoreeBinding) + "),";
+  if (el.styleBinding) {
+    data += "style:(" + (el.styleBinding) + "),";
   }
   return data
 }
 
-var stMax.WMS.NetCoree$1 = {
-  staticKeys: ['staticStMax.WMS.NetCoree'],
+var style$1 = {
+  staticKeys: ['staticStyle'],
   transformNode: transformNode$1,
   genData: genData$1
 }
@@ -8724,7 +8724,7 @@ var isNonPhrasingTag = makeMap(
   'address,article,aside,base,blockquote,body,caption,col,colgroup,dd,' +
   'details,dialog,div,dl,dt,fieldset,figcaption,figure,footer,form,' +
   'h1,h2,h3,h4,h5,h6,head,header,hgroup,hr,html,legend,li,menuitem,meta,' +
-  'optgroup,option,param,rp,rt,source,stMax.WMS.NetCoree,summary,tbody,td,tfoot,th,thead,' +
+  'optgroup,option,param,rp,rt,source,style,summary,tbody,td,tfoot,th,thead,' +
   'title,tr,track'
 );
 
@@ -8759,7 +8759,7 @@ var IS_REGEX_CAPTURING_BROKEN = false;
 });
 
 // Special Elements (can contain anything)
-var isPlainTextElement = makeMap('script,stMax.WMS.NetCoree,textarea', true);
+var isPlainTextElement = makeMap('script,style,textarea', true);
 var reCache = {};
 
 var decodingMap = {
@@ -8791,7 +8791,7 @@ function parseHTML (html, options) {
   var last, lastTag;
   while (html) {
     last = html;
-    // Make sure we're not in a plaintext content element like script/stMax.WMS.NetCoree
+    // Make sure we're not in a plaintext content element like script/style
     if (!lastTag || !isPlainTextElement(lastTag)) {
       var textEnd = html.indexOf('<');
       if (textEnd === 0) {
@@ -9640,14 +9640,14 @@ function makeAttrsMap (attrs) {
   return map
 }
 
-// for script (e.g. type="x/template") or stMax.WMS.NetCoree, do not decode content
+// for script (e.g. type="x/template") or style, do not decode content
 function isTextTag (el) {
-  return el.tag === 'script' || el.tag === 'stMax.WMS.NetCoree'
+  return el.tag === 'script' || el.tag === 'style'
 }
 
 function isForbiddenTag (el) {
   return (
-    el.tag === 'stMax.WMS.NetCoree' ||
+    el.tag === 'style' ||
     (el.tag === 'script' && (
       !el.attrsMap.type ||
       el.attrsMap.type === 'text/javascript'
@@ -9771,7 +9771,7 @@ var model$2 = {
 
 var modules$1 = [
   klass$1,
-  stMax.WMS.NetCoree$1,
+  style$1,
   model$2
 ]
 

@@ -6,3 +6,11 @@ D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.
 D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.dll
 D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.pdb
 D:\max\Git\Max_WMS\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.csprojAssemblyReference.cache
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\bin\Debug\netstandard2.0\Max.Core.Entity.deps.json
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\bin\Debug\netstandard2.0\Max.Core.Entity.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\bin\Debug\netstandard2.0\Max.Core.Entity.pdb
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.AssemblyInfoInputs.cache
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.AssemblyInfo.cs
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.pdb
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.csprojAssemblyReference.cache

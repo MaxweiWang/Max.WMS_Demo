@@ -2,9 +2,6 @@
 
 namespace Max.NetCore.Extensions.Attributes
 {
-    /// <summary>
-    /// ConsumesAttribute
-    /// </summary>
     public class AddHeaderAttribute : ResultFilterAttribute
     {
         private readonly string _name;

@@ -1,8 +1,8 @@
 ﻿using Max.Core.IServices;
 using Microsoft.AspNetCore.Mvc;
 using Max.Core.Dto;
-using Max.NetCore.Extensions;
-using Max.NetCore.Extensions.Attributes;
+using Max.NetCore.DIExtensions;
+using Max.NetCore.DIExtensions.Attributes;
 using Max.Core.Utils.Pub;
 using Max.WMS.NetCore.Attributes;
 

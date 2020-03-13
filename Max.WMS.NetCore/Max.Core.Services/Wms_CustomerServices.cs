@@ -6,12 +6,13 @@ using System.Collections.Generic;
 using System.Linq;
 using Max.Core.Entity;
 using Max.Core.Entity.Fluent.Validation;
-using Max.NetCore.Extensions.DI;
+using Max.NetCore.DI;
 using Max.Core.Utils.Extensions;
 using Max.Core.Utils.Json;
 using Max.Core.Utils.Log;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Table;
+using Max.Core.Utils.Env;
 
 namespace Max.Core.Services
 {
@@ -125,7 +126,7 @@ namespace Max.Core.Services
             }
             else
             {
-                var _nlog = ServiceResolve.Resolve<ILogUtil>();
+                var _nlog = GlobalCore.GetRequiredService<ILogUtil>();
                 _nlog.Debug(flag.ErrorMessage);
                 return (false, PubConst.Import3);
             }

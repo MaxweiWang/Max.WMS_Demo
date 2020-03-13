@@ -10,7 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Max.Core.Entity\Max.Core.Entity.csproj" />
-    <ProjectReference Include="..\Max.NetCore.Extensions\Max.NetCore.Extensions.csproj" />
+    <ProjectReference Include="..\Max.Core.Utils\Max.Core.Utils.csproj" />
+    <ProjectReference Include="..\Max.NetCore.DI\Max.NetCore.DI.csproj" />
   </ItemGroup>
 
 </Project>

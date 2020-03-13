@@ -5,7 +5,7 @@ using System.Data;
 using System.Dynamic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Max.NetCore.Extensions;
+using Max.NetCore.DI;
 using Max.Core.Utils.Table;
 
 namespace IRepository

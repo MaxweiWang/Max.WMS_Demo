@@ -1,5 +1,4 @@
-﻿using Brotli;
-using System.IO;
+﻿using System.IO;
 using System.IO.Compression;
 
 namespace Max.NetCore.Extensions

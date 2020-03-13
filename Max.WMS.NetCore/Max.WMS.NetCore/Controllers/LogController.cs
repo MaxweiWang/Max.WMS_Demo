@@ -2,8 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using SqlSugar;
 using System.Linq;
-using Max.NetCore.Extensions.Attributes;
-using Max.NetCore.Extensions;
+using Max.NetCore.DIExtensions.Attributes;
+using Max.NetCore.DIExtensions;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Table;
 using Max.WMS.NetCore.Attributes;

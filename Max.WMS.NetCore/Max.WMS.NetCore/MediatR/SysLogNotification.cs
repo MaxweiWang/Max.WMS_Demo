@@ -7,7 +7,7 @@ using MediatR;
 using Max.Core.Entity;
 using Max.Core.Utils.Env;
 using Max.Core.IServices;
-using Max.NetCore.Extensions.DI;
+using Max.NetCore.DIExtensions.DI;
 using Microsoft.Extensions.DependencyInjection;
 using Max.Core.Utils.Log;
 

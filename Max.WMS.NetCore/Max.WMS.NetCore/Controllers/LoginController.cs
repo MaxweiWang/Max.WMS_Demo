@@ -13,7 +13,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Max.Core.Dto;
 using Max.Core.Entity;
-using Max.NetCore.Extensions;
+using Max.NetCore.DIExtensions;
 using Max.Core.Utils.Extensions;
 using Max.Core.Utils.Pub;
 using Max.Core.Utils.Security;

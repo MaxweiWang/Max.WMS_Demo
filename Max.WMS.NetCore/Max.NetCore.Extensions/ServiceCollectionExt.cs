@@ -302,12 +302,12 @@ namespace Max.NetCore.Extensions
             }
         }
 
-        public static IServiceCollection AddDIProperty(this IServiceCollection services)
-        {
-            //替换控制器构建者类，实现控制器和Filter类属性注入功能
-            services.Replace(ServiceDescriptor.Transient<IControllerActivator, PropertiesAutowiredControllerActivator>());
-            services.Replace(ServiceDescriptor.Transient<IFilterProvider, PropertiesAutowiredFilterProvider>());
-            return services;
-        }
+        //public static IServiceCollection AddDIProperty(this IServiceCollection services)
+        //{
+        //    //替换控制器构建者类，实现控制器和Filter类属性注入功能
+        //    services.Replace(ServiceDescriptor.Transient<IControllerActivator, PropertiesAutowiredControllerActivator>());
+        //    services.Replace(ServiceDescriptor.Transient<IFilterProvider, PropertiesAutowiredFilterProvider>());
+        //    return services;
+        //}
     }
 }

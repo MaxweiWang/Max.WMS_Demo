@@ -41,7 +41,7 @@ var has = Object.prototype.hasOwnProperty;
 var defaults = {
     allowDots: false,
     allowPrototypes: false,
-    arraMax.WMS.NetCoreimit: 20,
+    arrayLimit: 20,
     decoder: utils.decode,
     delimiter: '&',
     depth: 5,
@@ -99,7 +99,7 @@ var parseObject = function (chain, val, options) {
                 && root !== cleanRoot
                 && String(index) === cleanRoot
                 && index >= 0
-                && (options.parseArrays && index <= options.arraMax.WMS.NetCoreimit)
+                && (options.parseArrays && index <= options.arrayLimit)
             ) {
                 obj = [];
                 obj[index] = leaf;
@@ -179,7 +179,7 @@ module.exports = function (str, opts) {
     options.ignoreQueryPrefix = options.ignoreQueryPrefix === true;
     options.delimiter = typeof options.delimiter === 'string' || utils.isRegExp(options.delimiter) ? options.delimiter : defaults.delimiter;
     options.depth = typeof options.depth === 'number' ? options.depth : defaults.depth;
-    options.arraMax.WMS.NetCoreimit = typeof options.arraMax.WMS.NetCoreimit === 'number' ? options.arraMax.WMS.NetCoreimit : defaults.arraMax.WMS.NetCoreimit;
+    options.arrayLimit = typeof options.arrayLimit === 'number' ? options.arrayLimit : defaults.arrayLimit;
     options.parseArrays = options.parseArrays !== false;
     options.decoder = typeof options.decoder === 'function' ? options.decoder : defaults.decoder;
     options.allowDots = typeof options.allowDots === 'boolean' ? options.allowDots : defaults.allowDots;

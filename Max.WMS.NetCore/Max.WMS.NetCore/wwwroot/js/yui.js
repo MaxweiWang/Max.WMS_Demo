@@ -655,7 +655,7 @@
         }
     });
     //---vue---component---
-    Vue.component('Max.WMS.NetCore-input', {
+    Vue.component('yl-input', {
         props: {
             value: String,
             id: String,
@@ -699,9 +699,9 @@
             }
         }
     });
-    Vue.component('Max.WMS.NetCore-select', {
+    Vue.component('yl-select', {
         props: ["lable", "option", "value", "list"],
-        //template: '#Max.WMS.NetCore-select',
+        //template: '#yl-select',
         template: `
     <div class="form-group">
             <label class="form-label col-sm-2">{{lable}}</label>

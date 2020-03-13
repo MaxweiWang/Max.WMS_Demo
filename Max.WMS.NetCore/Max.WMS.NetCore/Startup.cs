@@ -6,15 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text;
-using Max.NetCore.Extensions.Attributes;
+using Max.NetCore.DIExtensions.Attributes;
 using Repository;
 using Max.Core.Services;
-using Max.NetCore.Extensions;
-using Max.NetCore.Extensions.DI;
+using Max.NetCore.DIExtensions;
+using Max.NetCore.DIExtensions.DI;
 using Max.Core.Orm.SqlSugar;
 using SqlSugar;
 using MediatR;
-using Max.NetCore.Extensions.Conventions;
+using Max.NetCore.DIExtensions.Conventions;
 using Max.Core.Utils.Json;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Hosting;
@@ -37,21 +37,27 @@ namespace Max.WMS.NetCore
             {
                 option.Filters.Add<BaseExceptionAttribute>();
                 //option.Filters.Add<FilterXSSAttribute>();
-                //option.Conventions.Add(new ApplicationDescription("keywords", Configuration["sys:keywords"]));
-                //option.Conventions.Add(new ApplicationDescription("description", Configuration["sys:description"]));
                 option.Conventions.Add(new ApplicationDescription("title", Configuration["sys:title"]));
                 option.Conventions.Add(new ApplicationDescription("company", Configuration["sys:company"]));
                 option.Conventions.Add(new ApplicationDescription("customer", Configuration["sys:customer"]));
             }).SetCompatibilityVersion(CompatibilityVersion.Latest);
             services.AddControllersWithViews();
             services.AddRazorPages().AddRazorRuntimeCompilation();
+            //services.AddControllersWithViews(option =>
+            //{
+            //    option.Filters.Add<BaseExceptionAttribute>();
+            //    //option.Filters.Add<FilterXSSAttribute>();
+            //    option.Conventions.Add(new ApplicationDescription("title", Configuration["sys:title"]));
+            //    option.Conventions.Add(new ApplicationDescription("company", Configuration["sys:company"]));
+            //    option.Conventions.Add(new ApplicationDescription("customer", Configuration["sys:customer"]));
+            //});
             //services.Configure<CookiePolicyOptions>(options =>
             //{
             //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
             //    options.CheckConsentNeeded = context => true;
             //    options.MinimumSameSitePolicy = SameSiteMode.None;
             //});
-            //services.AddTimedJob();
+            // services.AddTimedJob();
             services.AddOptions();
             services.AddXsrf();
             services.AddXss();
@@ -83,7 +89,6 @@ namespace Max.WMS.NetCore
             {
                 o.JsonType = JsonType.Jil;
             });
-            //services.AddDIProperty();
             services.AddHttpContextAccessor();
             services.AddHtmlEncoder();
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
@@ -95,7 +100,6 @@ namespace Max.WMS.NetCore
             //@1 DependencyInjection 注册
             services.AddNlog(); //添加Nlog
             RegisterBase(services);
-          
             ServiceExtension.RegisterAssembly(services, "Max.Core.Services");
             ServiceExtension.RegisterAssembly(services, "Max.Core.Repository");
             //var bulid = services.BuildServiceProvider();
@@ -138,19 +142,21 @@ namespace Max.WMS.NetCore
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
             }
+            app.UseStaticFiles(); //使用静态文件
+
             app.UseGlobalCore();
             app.UseExecuteTime();
-           // app.UseTimedJob();
+            // app.UseTimedJob();
             app.UseResponseCompression();  //使用压缩
             app.UseResponseCaching();    //使用缓存
-
-            app.UseStaticFiles(); //使用静态文件
             app.UseCookiePolicy();
-            app.UseStatusCodePagesWithRedirects("/Home/Error/{0}");
+            app.UseRouting();
             app.UseAuthentication();
-            //app.UseRouting();
+            app.UseAuthorization();
+
+            app.UseStatusCodePagesWithRedirects("/Home/Error/{0}");
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
@@ -163,18 +169,6 @@ namespace Max.WMS.NetCore
                     pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
-
-            //app.UseMvc(routes =>
-            //{
-            //    routes.MapRoute(
-            //        name: "default",
-            //        template: "{controller=Login}/{action=Index}/{id?}");
-            //    // Areas
-            //    routes.MapRoute(
-            //        name: "areas",
-            //        template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-            //      );
-            //});
         }
     }
 }

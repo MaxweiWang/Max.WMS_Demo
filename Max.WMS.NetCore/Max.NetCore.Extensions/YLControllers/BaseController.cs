@@ -26,14 +26,13 @@ namespace Max.NetCore.Extensions
     ///[FromServices]  作为操作参数插入的请求服务
     /// url:https://docs.microsoft.com/zh-cn/aspnet/core/web-api/?view=aspnetcore-2.1
     /// </summary>
-    [Authorize]
     public class BaseController : Controller
     {
         private IMemoryCache _memory;
         private IConfiguration _configuration;
-        public string AppRoot { get { return CreateService<IHostingEnvironment>().ContentRootPath; } }
+        public string AppRoot { get { return CreateService<IWebHostEnvironment>().ContentRootPath; } }
 
-        public string WebRoot { get { return CreateService<IHostingEnvironment>().WebRootPath; } }
+        public string WebRoot { get { return CreateService<IWebHostEnvironment>().WebRootPath; } }
 
         protected IMemoryCache GetMemoryCache
         {
@@ -227,7 +226,7 @@ namespace Max.NetCore.Extensions
             var req = HttpContext.Request;
             return $"{req.Scheme}://{req.Host}{req.PathBase}{req.Path}{req.QueryString}";
         }
-        
+
         protected virtual string GetDisplayUrl()
         {
             return UriHelper.GetDisplayUrl(HttpContext.Request);
@@ -240,7 +239,7 @@ namespace Max.NetCore.Extensions
 
         protected virtual string GetEncodedUrl()
         {
-           return UriHelper.GetEncodedUrl(HttpContext.Request);
+            return UriHelper.GetEncodedUrl(HttpContext.Request);
         }
 
         protected virtual string GetBrowser()

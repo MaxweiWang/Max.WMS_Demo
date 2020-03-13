@@ -1,5 +1,4 @@
-﻿using Brotli;
-using Microsoft.AspNetCore.ResponseCompression;
+﻿using Microsoft.AspNetCore.ResponseCompression;
 using System.IO;
 using System.IO.Compression;
 
@@ -13,7 +12,7 @@ namespace Max.NetCore.Extensions
 
         public Stream CreateStream(Stream outputStream)
         {
-            return new BrotliStream(outputStream, CompressionMode.Compress);
+            return new BrotliStream(outputStream, CompressionLevel.Fastest);
         }
     }
 }

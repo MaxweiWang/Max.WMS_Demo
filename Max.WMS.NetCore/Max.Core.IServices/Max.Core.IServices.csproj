@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,7 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Max.Core.Dto\Max.Core.Dto.csproj" />
     <ProjectReference Include="..\Max.Core.Entity\Max.Core.Entity.csproj" />
-    <ProjectReference Include="..\Max.NetCore.Extensions\Max.NetCore.Extensions.csproj" />
+    <ProjectReference Include="..\Max.NetCore.DI\Max.NetCore.DI.csproj" />
   </ItemGroup>
 
 </Project>

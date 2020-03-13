@@ -130,7 +130,7 @@
         });
     }
 };
-var Max.WMS.NetCore = {
+var yl = {
     table: function (id, url, obj, method, key, singleSelect, DeptId, sortName, sortOrder) {
         method = method || "GET";
         sortName = sortName || "CreateDate";

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Max.Core.Dto\Max.Core.Dto.csproj" />
+    <ProjectReference Include="..\Max.Core.Utils\Max.Core.Utils.csproj" />
+    <ProjectReference Include="..\Max.NetCore.DI\Max.NetCore.DI.csproj" />
+  </ItemGroup>
+
+</Project>

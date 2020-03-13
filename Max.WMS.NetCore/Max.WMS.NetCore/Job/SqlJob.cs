@@ -1,5 +1,5 @@
 ﻿using Pomelo.AspNetCore.TimedJob;
-using Max.NetCore.Extensions.DI;
+using Max.NetCore.DIExtensions.DI;
 using Max.Core.Utils.Log;
 using SqlSugar;
 using System;

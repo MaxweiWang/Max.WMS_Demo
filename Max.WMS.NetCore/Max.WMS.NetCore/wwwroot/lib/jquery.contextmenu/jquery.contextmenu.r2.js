@@ -20,15 +20,15 @@
 
  	var menu, shadow, trigger, content, hash, currentTarget;
   var defaults = {
-    menuStMax.WMS.NetCoree: {
-      listStMax.WMS.NetCoree: 'none',
+    menuStyle: {
+      listStyle: 'none',
       padding: '1px',
       margin: '0px',
       backgroundColor: '#fff',
       border: '1px solid #999',
       width: '100px'
     },
-    itemStMax.WMS.NetCoree: {
+    itemStyle: {
       margin: '0px',
       color: '#000',
       display: 'block',
@@ -37,7 +37,7 @@
       border: '1px solid #fff',
       backgroundColor: 'transparent'
     },
-    itemHoverStMax.WMS.NetCoree: {
+    itemHoverStyle: {
       border: '1px solid #0a246a',
       backgroundColor: '#b6bdd2'
     },
@@ -67,9 +67,9 @@
     hash = hash || [];
     hash.push({
       id : id,
-      menuStMax.WMS.NetCoree: $.extend({}, defaults.menuStMax.WMS.NetCoree, options.menuStMax.WMS.NetCoree || {}),
-      itemStMax.WMS.NetCoree: $.extend({}, defaults.itemStMax.WMS.NetCoree, options.itemStMax.WMS.NetCoree || {}),
-      itemHoverStMax.WMS.NetCoree: $.extend({}, defaults.itemHoverStMax.WMS.NetCoree, options.itemHoverStMax.WMS.NetCoree || {}),
+      menuStyle: $.extend({}, defaults.menuStyle, options.menuStyle || {}),
+      itemStyle: $.extend({}, defaults.itemStyle, options.itemStyle || {}),
+      itemHoverStyle: $.extend({}, defaults.itemHoverStyle, options.itemHoverStyle || {}),
       bindings: options.bindings || {},
       shadow: options.shadow || options.shadow === false ? options.shadow : defaults.shadow,
       onContextMenu: options.onContextMenu || defaults.onContextMenu,
@@ -91,12 +91,12 @@
   function display(index, trigger, e, options) {
     var cur = hash[index];
     content = $('#'+cur.id).find('ul:first').clone(true);
-    content.css(cur.menuStMax.WMS.NetCoree).find('li').css(cur.itemStMax.WMS.NetCoree).hover(
+    content.css(cur.menuStyle).find('li').css(cur.itemStyle).hover(
       function() {
-        $(this).css(cur.itemHoverStMax.WMS.NetCoree);
+        $(this).css(cur.itemHoverStyle);
       },
       function(){
-        $(this).css(cur.itemStMax.WMS.NetCoree);
+        $(this).css(cur.itemStyle);
       }
     ).find('img').css({verticalAlign:'middle',paddingRight:'2px'});
 

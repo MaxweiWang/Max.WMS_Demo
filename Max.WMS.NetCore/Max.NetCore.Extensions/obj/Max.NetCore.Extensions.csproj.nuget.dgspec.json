@@ -1,45 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.NetCore.Extensions\\Max.NetCore.Extensions.csproj": {}
+    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.Extensions\\Max.NetCore.Extensions.csproj": {}
   },
   "projects": {
-    "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj": {
+    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj",
+        "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj",
         "projectName": "Max.Core.Dto",
-        "projectPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj",
-        "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
-        "outputPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Dto\\obj\\",
+        "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj",
+        "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.10.101.92:999/Nuget": {},
-          "http://vtfs2013:8099/NuGet": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
-                "projectPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj"
+              "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
+                "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj"
               },
-              "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
-                "projectPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj"
+              "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
+                "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj"
               }
             }
           }
@@ -70,37 +65,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
+    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj",
+        "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj",
         "projectName": "Max.Core.Entity",
-        "projectPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj",
-        "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
-        "outputPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Entity\\obj\\",
+        "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj",
+        "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.10.101.92:999/Nuget": {},
-          "http://vtfs2013:8099/NuGet": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -149,37 +139,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
+    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
+        "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
         "projectName": "Max.Core.Utils",
-        "projectPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
-        "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
-        "outputPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Utils\\obj\\",
+        "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
+        "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.10.101.92:999/Nuget": {},
-          "http://vtfs2013:8099/NuGet": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -336,46 +321,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.NetCore.Extensions\\Max.NetCore.Extensions.csproj": {
+    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.Extensions\\Max.NetCore.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.NetCore.Extensions\\Max.NetCore.Extensions.csproj",
+        "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.Extensions\\Max.NetCore.Extensions.csproj",
         "projectName": "Max.NetCore.Extensions",
-        "projectPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.NetCore.Extensions\\Max.NetCore.Extensions.csproj",
-        "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
-        "outputPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.NetCore.Extensions\\obj\\",
+        "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.Extensions\\Max.NetCore.Extensions.csproj",
+        "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.10.101.92:999/Nuget": {},
-          "http://vtfs2013:8099/NuGet": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netstandard2.1": {
             "projectReferences": {
-              "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj": {
-                "projectPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj"
+              "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj": {
+                "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj"
               },
-              "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
-                "projectPath": "D:\\max\\Git\\Max_WMS\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj"
+              "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
+                "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj"
               }
             }
           }
@@ -387,7 +367,7 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netstandard2.1": {
           "dependencies": {
             "Autofac": {
               "target": "Package",
@@ -397,30 +377,6 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
-            "Brotli.NET": {
-              "target": "Package",
-              "version": "[2.0.4.2, )"
-            },
-            "Microsoft.AspNetCore.Diagnostics": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Http.Abstractions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.ResponseCompression": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Server.Kestrel.Core": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.Extensions.Caching.Redis": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -428,16 +384,6 @@
             "Microsoft.Extensions.DependencyModel": {
               "target": "Package",
               "version": "[3.1.2, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            },
-            "System.IO.Compression": {
-              "target": "Package",
-              "version": "[4.3.0, )"
             },
             "System.Runtime.Loader": {
               "target": "Package",
@@ -458,7 +404,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
