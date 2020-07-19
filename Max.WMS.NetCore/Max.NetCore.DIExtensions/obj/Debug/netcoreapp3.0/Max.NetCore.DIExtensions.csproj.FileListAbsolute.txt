@@ -16,3 +16,4 @@ D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DIExtensions\obj\Deb
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DIExtensions\obj\Debug\netcoreapp3.0\Max.NetCore.DIExtensions.csproj.CopyComplete
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DIExtensions\obj\Debug\netcoreapp3.0\Max.NetCore.DIExtensions.dll
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DIExtensions\obj\Debug\netcoreapp3.0\Max.NetCore.DIExtensions.pdb
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DIExtensions\obj\Debug\netcoreapp3.0\Max.NetCore.DIExtensions.csproj.CoreCompileInputs.cache

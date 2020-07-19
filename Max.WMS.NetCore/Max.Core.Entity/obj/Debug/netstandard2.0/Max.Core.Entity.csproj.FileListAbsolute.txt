@@ -14,3 +14,4 @@ D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netsta
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.dll
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.pdb
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.csprojAssemblyReference.cache
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Entity\obj\Debug\netstandard2.0\Max.Core.Entity.csproj.CoreCompileInputs.cache

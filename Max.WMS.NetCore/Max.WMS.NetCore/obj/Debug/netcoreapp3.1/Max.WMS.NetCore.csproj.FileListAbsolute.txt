@@ -1102,3 +1102,14 @@ D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcor
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\Max.NetCore.DIExtensions.dll
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\Max.NetCore.DIExtensions.pdb
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\Max.NetCore.DI.pdb
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Registry.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\refs\System.IO.Pipelines.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\refs\System.Security.AccessControl.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Cng.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Xml.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\refs\System.Security.Permissions.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\refs\System.Security.Principal.Windows.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\bin\Debug\netcoreapp3.1\refs\System.Windows.Extensions.dll
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\obj\Debug\netcoreapp3.1\Max.WMS.NetCore.csproj.CoreCompileInputs.cache
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.WMS.NetCore\obj\Debug\netcoreapp3.1\Max.WMS.NetCore.genruntimeconfig.cache

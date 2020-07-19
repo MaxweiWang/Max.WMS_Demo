@@ -16,3 +16,4 @@ D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.IServices\bin\Debug\net
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.IServices\obj\Debug\netstandard2.1\Max.Core.IServices.csproj.CopyComplete
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.IServices\obj\Debug\netstandard2.1\Max.Core.IServices.dll
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.IServices\obj\Debug\netstandard2.1\Max.Core.IServices.pdb
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.IServices\obj\Debug\netstandard2.1\Max.Core.IServices.csproj.CoreCompileInputs.cache

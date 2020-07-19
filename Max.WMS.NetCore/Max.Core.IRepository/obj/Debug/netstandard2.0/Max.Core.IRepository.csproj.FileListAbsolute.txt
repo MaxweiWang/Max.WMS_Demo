@@ -39,3 +39,4 @@ D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.IRepository\obj\Debug\n
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.IRepository\obj\Debug\netstandard2.0\Max.Core.IRepository.pdb
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.IRepository\bin\Debug\netstandard2.0\Max.NetCore.DI.dll
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.IRepository\bin\Debug\netstandard2.0\Max.NetCore.DI.pdb
+D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.IRepository\obj\Debug\netstandard2.0\Max.Core.IRepository.csproj.CoreCompileInputs.cache
