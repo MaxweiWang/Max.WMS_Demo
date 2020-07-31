@@ -7,3 +7,12 @@ D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\obj\Debug\netstan
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\obj\Debug\netstandard2.0\Max.NetCore.DI.pdb
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\obj\Debug\netstandard2.0\Max.NetCore.DI.csprojAssemblyReference.cache
 D:\Project\Git\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\obj\Debug\netstandard2.0\Max.NetCore.DI.csproj.CoreCompileInputs.cache
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\bin\Debug\netstandard2.0\Max.NetCore.DI.deps.json
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\bin\Debug\netstandard2.0\Max.NetCore.DI.dll
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\bin\Debug\netstandard2.0\Max.NetCore.DI.pdb
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\obj\Debug\netstandard2.0\Max.NetCore.DI.csprojAssemblyReference.cache
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\obj\Debug\netstandard2.0\Max.NetCore.DI.csproj.CoreCompileInputs.cache
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\obj\Debug\netstandard2.0\Max.NetCore.DI.AssemblyInfoInputs.cache
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\obj\Debug\netstandard2.0\Max.NetCore.DI.AssemblyInfo.cs
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\obj\Debug\netstandard2.0\Max.NetCore.DI.dll
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.NetCore.DI\obj\Debug\netstandard2.0\Max.NetCore.DI.pdb

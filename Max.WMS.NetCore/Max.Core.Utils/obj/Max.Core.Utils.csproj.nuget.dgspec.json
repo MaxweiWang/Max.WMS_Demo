@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {}
+    "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
+    "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
+        "projectUniqueName": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
         "projectName": "Max.Core.Utils",
-        "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
-        "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\obj\\",
+        "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
+        "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
+        "outputPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +25,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://repo.colipu.com/repository/nuget-hosted-erp": {},
+          "http://vtfs2013:8099/NuGet": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.0": {

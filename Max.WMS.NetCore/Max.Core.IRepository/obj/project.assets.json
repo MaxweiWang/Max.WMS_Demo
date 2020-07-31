@@ -10339,23 +10339,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wangM\\.nuget\\packages\\": {},
+    "C:\\Users\\wangxuewei\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IRepository\\Max.Core.IRepository.csproj",
+      "projectUniqueName": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IRepository\\Max.Core.IRepository.csproj",
       "projectName": "Max.Core.IRepository",
-      "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IRepository\\Max.Core.IRepository.csproj",
-      "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IRepository\\obj\\",
+      "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IRepository\\Max.Core.IRepository.csproj",
+      "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
+      "outputPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10363,19 +10363,22 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "http://repo.colipu.com/repository/nuget-hosted-erp": {},
+        "http://vtfs2013:8099/NuGet": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
-              "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj"
+            "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
+              "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj"
             },
-            "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
-              "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj"
+            "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
+              "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj"
             },
-            "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj": {
-              "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj"
+            "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj": {
+              "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj"
             }
           }
         }

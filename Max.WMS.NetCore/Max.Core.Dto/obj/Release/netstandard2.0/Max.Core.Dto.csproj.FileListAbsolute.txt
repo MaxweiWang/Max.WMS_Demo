@@ -1,0 +1,15 @@
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\bin\Release\netstandard2.0\NLog.config
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\bin\Release\netstandard2.0\Max.Core.Dto.deps.json
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\bin\Release\netstandard2.0\Max.Core.Dto.dll
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\bin\Release\netstandard2.0\Max.Core.Dto.pdb
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\bin\Release\netstandard2.0\Max.Core.Entity.dll
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\bin\Release\netstandard2.0\Max.Core.Utils.dll
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\bin\Release\netstandard2.0\Max.Core.Entity.pdb
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\bin\Release\netstandard2.0\Max.Core.Utils.pdb
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\obj\Release\netstandard2.0\Max.Core.Dto.csprojAssemblyReference.cache
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\obj\Release\netstandard2.0\Max.Core.Dto.csproj.CoreCompileInputs.cache
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\obj\Release\netstandard2.0\Max.Core.Dto.AssemblyInfoInputs.cache
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\obj\Release\netstandard2.0\Max.Core.Dto.AssemblyInfo.cs
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\obj\Release\netstandard2.0\Max.Core.Dto.csproj.CopyComplete
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\obj\Release\netstandard2.0\Max.Core.Dto.dll
+D:\max\WMS\Max.WMS_Demo\Max.WMS.NetCore\Max.Core.Dto\obj\Release\netstandard2.0\Max.Core.Dto.pdb

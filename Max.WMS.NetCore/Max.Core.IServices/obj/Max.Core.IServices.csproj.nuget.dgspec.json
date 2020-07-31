@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IServices\\Max.Core.IServices.csproj": {}
+    "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IServices\\Max.Core.IServices.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj": {
+    "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj",
+        "projectUniqueName": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj",
         "projectName": "Max.Core.Dto",
-        "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj",
-        "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\obj\\",
+        "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj",
+        "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
+        "outputPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,16 +25,19 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://repo.colipu.com/repository/nuget-hosted-erp": {},
+          "http://vtfs2013:8099/NuGet": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
-                "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj"
+              "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
+                "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj"
               },
-              "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
-                "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj"
+              "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
+                "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj"
               }
             }
           }
@@ -69,20 +72,20 @@
         }
       }
     },
-    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
+    "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj",
+        "projectUniqueName": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj",
         "projectName": "Max.Core.Entity",
-        "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj",
-        "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\obj\\",
+        "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj",
+        "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
+        "outputPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +93,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://repo.colipu.com/repository/nuget-hosted-erp": {},
+          "http://vtfs2013:8099/NuGet": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -143,20 +149,20 @@
         }
       }
     },
-    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IServices\\Max.Core.IServices.csproj": {
+    "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IServices\\Max.Core.IServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IServices\\Max.Core.IServices.csproj",
+        "projectUniqueName": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IServices\\Max.Core.IServices.csproj",
         "projectName": "Max.Core.IServices",
-        "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IServices\\Max.Core.IServices.csproj",
-        "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IServices\\obj\\",
+        "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IServices\\Max.Core.IServices.csproj",
+        "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
+        "outputPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.IServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,19 +170,22 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://repo.colipu.com/repository/nuget-hosted-erp": {},
+          "http://vtfs2013:8099/NuGet": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj": {
-                "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj"
+              "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj": {
+                "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Dto\\Max.Core.Dto.csproj"
               },
-              "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
-                "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj"
+              "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj": {
+                "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Entity\\Max.Core.Entity.csproj"
               },
-              "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj": {
-                "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj"
+              "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj": {
+                "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj"
               }
             }
           }
@@ -214,20 +223,20 @@
         }
       }
     },
-    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
+    "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
+        "projectUniqueName": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
         "projectName": "Max.Core.Utils",
-        "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
-        "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\obj\\",
+        "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\Max.Core.Utils.csproj",
+        "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
+        "outputPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.Core.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -235,7 +244,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://repo.colipu.com/repository/nuget-hosted-erp": {},
+          "http://vtfs2013:8099/NuGet": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -396,20 +408,20 @@
         }
       }
     },
-    "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj": {
+    "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj",
+        "projectUniqueName": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj",
         "projectName": "Max.NetCore.DI",
-        "projectPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj",
-        "packagesPath": "C:\\Users\\wangM\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Git\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\obj\\",
+        "projectPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\Max.NetCore.DI.csproj",
+        "packagesPath": "C:\\Users\\wangxuewei\\.nuget\\packages\\",
+        "outputPath": "D:\\max\\WMS\\Max.WMS_Demo\\Max.WMS.NetCore\\Max.NetCore.DI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangxuewei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -417,7 +429,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://repo.colipu.com/repository/nuget-hosted-erp": {},
+          "http://vtfs2013:8099/NuGet": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.0": {
